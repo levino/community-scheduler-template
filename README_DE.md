@@ -7,7 +7,7 @@
 [![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> **💡 Live-Demo:** [community-scheduler-template.example.com](https://community-scheduler-template.example.com) - Kindergarten Zipfelmütze Kochdienst-Demo
+> **💡 Live-Demo:** [community-scheduler-demo.levinkeller.de](https://community-scheduler-demo.levinkeller.de) - Kindergarten Zipfelmütze Kochdienst-Demo
 >
 > Die Demo ist der Einfachheit halber öffentlich. In der Praxis kann das System **zugriffsgeschützt** betrieben werden (privates Repo + Authentication).
 
@@ -234,21 +234,30 @@ Alle haben erstklassige GitHub-Integration. Push = Deploy. Fertig.
 
 ### 4. SMS-Erinnerungen hinzufügen (Optional)
 
-Das Original-Projekt enthält SMS-Erinnerungs-Funktionalität via Twilio:
+**✅ Vorkonfiguriert und einsatzbereit!** Dieses Template enthält SMS-Erinnerungs-Funktionalität via Twilio:
 - Automatische tägliche Erinnerungen an Teilnehmer
 - Gesendet 18 Stunden vor Dienstzeit
 - Personalisierte Nachrichten mit Mit-Teilnehmer-Namen
 - Läuft via GitHub Actions (geplanter Workflow)
 
-Siehe die [Original-Implementierung](https://github.com/levino/waeldchendienst-waldorfschule-hannover-maschsee) für Referenz-Code.
+Der Workflow und das Script sind **bereits im Template enthalten**:
+- `.github/workflows/sms-reminder.yml` - GitHub Action Workflow (Cron-Schedule auskommentiert)
+- `scripts/send-sms-reminder.ts` - SMS-Versand-Logik
 
 **Setup:**
-1. Twilio Account erstellen (Kostenlose Testversion verfügbar)
-2. GitHub Secrets hinzufügen: `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`
-3. Workflow aus Original-Projekt kopieren
-4. Zeitplan konfigurieren in `.github/workflows/sms-reminder.yml`
+1. [Twilio Account](https://www.twilio.com) erstellen (Kostenlose Testversion verfügbar)
+2. Diese GitHub Secrets zu deinem Repository hinzufügen:
+   - `TWILIO_ACCOUNT_SID` - Deine Twilio Account SID
+   - `TWILIO_AUTH_TOKEN` - Dein Twilio Auth Token
+   - `TWILIO_SENDER_ID` - Absender-Name (z.B. "KiGa Zipfelmütze")
+   - `REMINDER_CONTEXT` - Kontext-Text (z.B. "Kochdienst")
+   - `SENDER_NAME` - Wer die Erinnerungen sendet (z.B. "die Koordination")
+3. Die `schedule`-Sektion in `.github/workflows/sms-reminder.yml` auskommentieren
+4. Bei Bedarf Cron-Schedule anpassen (Standard: 17:00 UTC = 18:00 CET)
 
-**Kosten:** ~0,01€ pro SMS (Twilio Pricing)
+**Manuell testen:** Nutze den "Run workflow" Button in GitHub Actions vor Aktivierung des Zeitplans.
+
+**Kosten:** ~0,01€ pro SMS (Twilio Pricing) - typischerweise wenige Euro pro Monat für kleine Gruppen
 
 ---
 

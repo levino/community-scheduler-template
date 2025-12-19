@@ -1,0 +1,35 @@
+name: SMS Reminder
+
+on:
+  # Schedule is commented out by default - uncomment and configure for production
+  # schedule:
+  #   # Every day at 18:00 CET (17:00 UTC in winter, 16:00 UTC in summer)
+  #   # Using 17:00 UTC as compromise
+  #   - cron: '0 17 * * *'
+  workflow_dispatch: # Manual trigger for testing
+
+jobs:
+  send-reminder:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Send SMS Reminders
+        env:
+          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+          TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
+          TWILIO_SENDER_ID: ${{ secrets.TWILIO_SENDER_ID }}
+          REMINDER_CONTEXT: ${{ secrets.REMINDER_CONTEXT }}
+          SENDER_NAME: ${{ secrets.SENDER_NAME }}
+        run: node --experimental-strip-types scripts/send-sms-reminder.ts

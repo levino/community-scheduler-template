@@ -31,7 +31,9 @@
 		"ramda": "^0.32.0",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
-		"tailwindcss": "^3.4.0"
+		"tailwindcss": "^3.4.0",
+		"twilio": "^5.11.1",
+		"yaml": "^2.8.2"
 	},
 	"devDependencies": {
 		"@anthropic-ai/claude-code": "^2.0.26",

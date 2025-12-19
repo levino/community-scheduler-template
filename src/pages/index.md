@@ -34,7 +34,7 @@ Diese Demo zeigt ein Planungssystem für den **Eltern-Kochdienst im Kindergarten
 - **Claude (KI)** für Änderungen in einfachem Deutsch
 - **Static Site Generation** für blitzschnelle, sichere Auslieferung
 - **YAML-Dateien** statt Datenbanken
-- **Automatische SMS-Erinnerungen** möglich (siehe Original-Projekt)
+- **Automatische SMS-Erinnerungen** bereits vorbereitet (via Twilio)
 
 **Ergebnis:** Über 34.000€ gespart im ersten Jahr, keine Wartungslast.
 
@@ -139,7 +139,7 @@ Installiere [Claude GitHub Action](https://docs.claude.com/claude-code/github-ac
 - ✅ **Kein Backend nötig** - GitHub ist dein CMS
 - ✅ **KI-gestützte Updates** - Claude Code hilft bei Änderungen
 - ✅ **Self-Service für User** - sie bearbeiten Daten direkt
-- ✅ **Automatische Erinnerungen** - SMS-Benachrichtigungen via Twilio (siehe Original-Projekt)
+- ✅ **Automatische Erinnerungen** - SMS-Benachrichtigungen via Twilio (vorkonfiguriert)
 - ✅ **Typsicher** - Zod-Validierung fängt Fehler zur Build-Zeit ab
 - ✅ **Mobile-friendly** - funktioniert perfekt auf Smartphones
 - ✅ **Blitzschnell** - vor-gerenderte statische Seiten
@@ -150,7 +150,7 @@ Installiere [Claude GitHub Action](https://docs.claude.com/claude-code/github-ac
 
 Das Template unterstützt nicht nur Anzeige, sondern auch **aktive Aktionen**:
 
-- 📱 **SMS-Erinnerungen**: Das [Original-Projekt](https://github.com/levino/waeldchendienst-waldorfschule-hannover-maschsee) enthält fertigen Code für automatische SMS-Benachrichtigungen via Twilio
+- 📱 **SMS-Erinnerungen**: ✅ **Bereits vorbereitet!** Workflow und Script sind im Template enthalten (`.github/workflows/sms-reminder.yml`). Einfach Twilio-Account verbinden, Cron-Schedule aktivieren und los geht's! Sendet automatisch Erinnerungen 18h vor jedem Dienst.
 - 📧 **Email-Benachrichtigungen**: Einfach hinzuzufügen via GitHub Actions
 - 📅 **Kalender-Sync**: Integration mit Google Calendar, iCal etc. möglich
 - 🔔 **Webhook-Integration**: Verbinde mit Slack, Discord, oder anderen Tools
