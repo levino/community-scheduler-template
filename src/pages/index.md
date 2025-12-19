@@ -1,157 +1,157 @@
 ---
 title: Community Scheduler Template - Live Demo
-description: See the template in action and learn how to use it for your organization
+description: Siehe das Template in Aktion und lerne, wie du es für deine Organisation nutzen kannst
 layout: '@levino/shipyard-base/layouts/Splash.astro'
 ---
 
 # Community Scheduler Template
 ## Live Demo
 
-> **GitHub as your admin interface. AI as your developer. Zero backend code.**
+> **GitHub als Admin-Interface. KI als Entwickler. Null Backend-Code.**
 
-This is a **live demonstration** of the Community Scheduler Template - a production-ready solution for managing volunteer schedules without building backends or admin panels.
-
----
-
-## 🎯 What You're Looking At
-
-This demo shows a real-world scheduling system originally built for a Waldorf school's forest service program. Instead of building a custom backend and admin interface (weeks of work, thousands in costs), we use:
-
-- **GitHub** as the admin interface
-- **Claude Code** to make changes via plain English
-- **Static site generation** for blazing-fast, secure delivery
-- **YAML files** instead of databases
-
-**Result:** 34k€+ saved in first year, zero maintenance burden.
+Dies ist eine **Live-Demonstration** des Community Scheduler Templates - eine produktionsreife Lösung für die Verwaltung von Freiwilligen-Zeitplänen ohne Backend oder Admin-Panel.
 
 ---
 
-## 🚀 Try It Out
+## 🎯 Was du hier siehst
 
-### Explore the Demo
+Diese Demo zeigt ein reales Planungssystem, das ursprünglich für das Waldprogramm einer Waldorfschule gebaut wurde. Statt ein individuelles Backend und Admin-Interface zu bauen (Wochen Arbeit, Tausende Euro Kosten), nutzen wir:
 
-- [**Weekly Schedules**](/dienstplan/monday) - See how services are organized by weekday
-- [**Statistics Dashboard**](/dienstplan/auswertung) - View completion metrics for all volunteers
-- [**Contact Directory**](/docs/ansprechpartnerinnen) - Mobile-friendly contact list with one-tap calling
+- **GitHub** als Admin-Interface
+- **Claude Code** für Änderungen in einfachem Deutsch
+- **Static Site Generation** für blitzschnelle, sichere Auslieferung
+- **YAML-Dateien** statt Datenbanken
 
-### How It Works
-
-1. **Data lives in YAML files** - simple text, not databases
-2. **Edit via GitHub** - users can request changes via Issues
-3. **Claude Code assists** - AI makes edits based on plain English requests
-4. **Pull Requests = Review** - admins approve with one click
-5. **Auto-deploys** - changes go live in seconds
-
-**Example:** "Hey @claude-code, please swap John's duty from April 15 to April 22"
-→ Claude creates PR → Admin merges → Done in 30 seconds
+**Ergebnis:** Über 34.000€ gespart im ersten Jahr, keine Wartungslast.
 
 ---
 
-## 💡 Why This Changes Everything
+## 🚀 Probier es aus
 
-### Traditional Approach
-- Build frontend (2 weeks)
-- Build backend API (2 weeks)
-- Build admin interface (3 weeks)
-- Add authentication (1 week)
-- **Total: 9 weeks @ 100€/h = 36,000€**
-- **Hosting: 540€/year** (server + database + SSL)
+### Erkunde die Demo
 
-### This Template
-- Customize frontend (2 days)
-- Deploy (30 minutes)
-- **Total: 2.5 days @ 100€/h = 2,000€**
-- **Hosting: ~0-60€/year** (static files only)
+- [**Wochenpläne**](/dienstplan/monday) - Siehe wie Dienste nach Wochentagen organisiert sind
+- [**Statistik-Dashboard**](/dienstplan/auswertung) - Zeigt Metriken für alle Freiwilligen
+- [**Kontaktverzeichnis**](/docs/ansprechpartnerinnen) - Mobile-freundliche Kontaktliste mit direkter Anruffunktion
 
-**You save 34,000€+ in the first year alone.**
+### Wie es funktioniert
+
+1. **Daten leben in YAML-Dateien** - einfacher Text, keine Datenbank
+2. **Bearbeiten via GitHub** - User können Änderungen via Issues anfragen
+3. **Claude Code hilft** - KI macht Änderungen basierend auf einfachen Anweisungen
+4. **Pull Requests = Review** - Admins genehmigen mit einem Klick
+5. **Auto-Deploy** - Änderungen sind in Sekunden live
+
+**Beispiel:** "Hey @claude-code, bitte verschiebe Johns Dienst vom 15. April auf den 22. April"
+→ Claude erstellt PR → Admin merged → Fertig in 30 Sekunden
 
 ---
 
-## 📦 Get Started
+## 💡 Warum das alles verändert
 
-### 1. Fork the Template
+### Traditioneller Ansatz
+- Frontend bauen (2 Wochen)
+- Backend API bauen (2 Wochen)
+- Admin-Interface bauen (3 Wochen)
+- Authentifizierung hinzufügen (1 Woche)
+- **Gesamt: 9 Wochen @ 100€/h = 36.000€**
+- **Hosting: 540€/Jahr** (Server + Datenbank + SSL)
+
+### Dieses Template
+- Frontend anpassen (2 Tage)
+- Deployment (30 Minuten)
+- **Gesamt: 2,5 Tage @ 100€/h = 2.000€**
+- **Hosting: ~0-60€/Jahr** (nur statische Dateien)
+
+**Du sparst über 34.000€ allein im ersten Jahr.**
+
+---
+
+## 📦 So startest du
+
+### 1. Template forken
 
 ```bash
-# Click "Use this template" on GitHub, then:
-git clone https://github.com/YOUR-USERNAME/your-scheduler.git
-cd your-scheduler
+# Klicke "Use this template" auf GitHub, dann:
+git clone https://github.com/DEIN-USERNAME/dein-scheduler.git
+cd dein-scheduler
 npm install
 ```
 
-### 2. Customize Your Data
+### 2. Deine Daten anpassen
 
-Edit `src/content/parent.yaml` and `src/content/service.yaml` with your volunteers and schedules.
+Bearbeite `src/content/parent.yaml` und `src/content/service.yaml` mit deinen Freiwilligen und Terminen.
 
-### 3. Deploy
+### 3. Deployen
 
-Push to GitHub and connect to:
-- GitHub Pages (free)
-- Cloudflare Pages (free)
-- Netlify (free tier)
-- Vercel (free tier)
+Zu GitHub pushen und verbinden mit:
+- GitHub Pages (kostenlos)
+- Cloudflare Pages (kostenlos)
+- Netlify (großzügiger Free-Tier)
+- Vercel (großzügiger Free-Tier)
 
-### 4. Set Up AI Assistance (Optional)
+### 4. KI-Unterstützung einrichten (Optional)
 
-Install [Claude Code GitHub Action](https://docs.claude.com/claude-code/github-actions) and your users can request changes via plain English!
-
----
-
-## 🌟 Key Features
-
-- ✅ **No backend needed** - GitHub is your CMS
-- ✅ **AI-powered updates** - Claude Code assists with changes
-- ✅ **Self-service for users** - they edit data directly
-- ✅ **Type-safe** - Zod validation catches errors at build time
-- ✅ **Mobile-friendly** - works perfectly on phones
-- ✅ **Blazing fast** - pre-rendered static pages
-- ✅ **Zero maintenance** - no servers to manage
-- ✅ **Git history** - built-in audit log
+Installiere [Claude Code GitHub Action](https://docs.claude.com/claude-code/github-actions) und deine User können Änderungen in einfachem Deutsch anfragen!
 
 ---
 
-## 📚 Learn More
+## 🌟 Hauptfunktionen
 
-### Documentation
-- [**GitHub Repository**](https://github.com/levino/community-scheduler-template) - Source code, README, and setup instructions
+- ✅ **Kein Backend nötig** - GitHub ist dein CMS
+- ✅ **KI-gestützte Updates** - Claude Code hilft bei Änderungen
+- ✅ **Self-Service für User** - sie bearbeiten Daten direkt
+- ✅ **Typsicher** - Zod-Validierung fängt Fehler zur Build-Zeit ab
+- ✅ **Mobile-friendly** - funktioniert perfekt auf Smartphones
+- ✅ **Blitzschnell** - vor-gerenderte statische Seiten
+- ✅ **Null Wartung** - keine Server zu verwalten
+- ✅ **Git History** - eingebautes Audit-Log
+
+---
+
+## 📚 Mehr erfahren
+
+### Dokumentation
+- [**GitHub Repository**](https://github.com/levino/community-scheduler-template) - Quellcode, README und Setup-Anleitung
 - [**README (English)**](https://github.com/levino/community-scheduler-template/blob/main/README.md) - Comprehensive guide
-- [**README (Deutsch)**](https://github.com/levino/community-scheduler-template/blob/main/README_DE.md) - Deutsche Dokumentation
+- [**README (Deutsch)**](https://github.com/levino/community-scheduler-template/blob/main/README_DE.md) - Umfassende Anleitung
 
-### Technical Details
-- Built with [Astro 5.16+](https://astro.build)
-- Styled with [Tailwind CSS](https://tailwindcss.com) + [DaisyUI](https://daisyui.com)
-- Uses [Content Collections](https://docs.astro.build/en/guides/content-collections/) for type-safe data
-- Auto-formatted with [Biome](https://biomejs.dev)
-- Deployed on [Cloudflare Workers](https://workers.cloudflare.com)
+### Technische Details
+- Gebaut mit [Astro 5.16+](https://astro.build)
+- Gestylt mit [Tailwind CSS](https://tailwindcss.com) + [DaisyUI](https://daisyui.com)
+- Nutzt [Content Collections](https://docs.astro.build/en/guides/content-collections/) für typsichere Daten
+- Auto-formatiert mit [Biome](https://biomejs.dev)
+- Deployed auf [Cloudflare Workers](https://workers.cloudflare.com)
 
 ---
 
-## 👨‍💻 About
+## 👨‍💻 Über das Projekt
 
-This template was created by [Levin Keller](https://levinkeller.de) with assistance from [Claude Code](https://claude.com/claude-code).
+Dieses Template wurde von [Levin Keller](https://levinkeller.de) mit Unterstützung von [Claude Code](https://claude.com/claude-code) erstellt.
 
-**Born from frustration:** Coordinating parent volunteers shouldn't require building yet another admin panel. This template proves you don't always need a backend.
+**Aus Frustration geboren:** Die Koordination von Eltern-Freiwilligen sollte nicht erfordern, noch ein Admin-Panel zu bauen. Dieses Template beweist, dass man nicht immer ein Backend braucht.
 
-### Contact & Support
+### Kontakt & Support
 
 - **Website:** [levinkeller.de](https://levinkeller.de)
 - **GitHub:** [@levino](https://github.com/levino)
-- **Issues:** [Report bugs or request features](https://github.com/levino/community-scheduler-template/issues)
-- **Discussions:** [Ask questions or share ideas](https://github.com/levino/community-scheduler-template/discussions)
+- **Issues:** [Bugs melden oder Features anfragen](https://github.com/levino/community-scheduler-template/issues)
+- **Discussions:** [Fragen stellen oder Ideen teilen](https://github.com/levino/community-scheduler-template/discussions)
 
 ---
 
-## 📄 License
+## 📄 Lizenz
 
-MIT License - free to use for any purpose!
-
----
-
-## 🚀 Ready to Build Your Own?
-
-Click "Use this template" on [GitHub](https://github.com/levino/community-scheduler-template) and start managing schedules without the backend hassle.
-
-**Questions?** Open an issue with `@claude-code` and get AI-powered assistance!
+MIT License - frei nutzbar für jeden Zweck!
 
 ---
 
-*Proof that you don't always need a backend.*
+## 🚀 Bereit, dein eigenes zu bauen?
+
+Klicke "Use this template" auf [GitHub](https://github.com/levino/community-scheduler-template) und starte mit der Verwaltung von Zeitplänen ohne Backend-Aufwand.
+
+**Fragen?** Öffne ein Issue mit `@claude-code` und erhalte KI-gestützte Hilfe!
+
+---
+
+*Beweis, dass man nicht immer ein Backend braucht.*
