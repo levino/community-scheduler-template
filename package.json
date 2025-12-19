@@ -1,0 +1,58 @@
+{
+	"name": "community-scheduler-template",
+	"version": "1.0.0",
+	"type": "module",
+	"private": false,
+	"scripts": {
+		"dev": "astro dev --host 0.0.0.0",
+		"start": "astro start",
+		"build": "astro build",
+		"preview": "astro preview --host 0.0.0.0",
+		"typecheck": "astro check && tsc --noEmit",
+		"claude": "claude --dangerously-skip-permissions",
+		"prepare": "lefthook install"
+	},
+	"dependencies": {
+		"@astrojs/mdx": "^4.0.0",
+		"@astrojs/node": "^9.5.1",
+		"@astrojs/react": "^4.0.0",
+		"@astrojs/tailwind": "^6.0.2",
+		"@levino/shipyard-base": "^0.5.9",
+		"@levino/shipyard-blog": "^0.5.1",
+		"@levino/shipyard-docs": "^0.5.1",
+		"@mdx-js/react": "^3.0.0",
+		"@tailwindcss/typography": "^0.5.19",
+		"@types/ramda": "^0.31.1",
+		"astro": "^5.16.6",
+		"clsx": "^2.0.0",
+		"daisyui": "^4.12.0",
+		"date-fns": "^4.1.0",
+		"prism-react-renderer": "^2.3.0",
+		"ramda": "^0.32.0",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"tailwindcss": "^3.4.0"
+	},
+	"devDependencies": {
+		"@anthropic-ai/claude-code": "^2.0.26",
+		"@astrojs/check": "^0.9.6",
+		"@biomejs/biome": "2.3.10",
+		"lefthook": "^2.0.12",
+		"typescript": "~5.6.2"
+	},
+	"browserslist": {
+		"production": [
+			">0.5%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 3 chrome version",
+			"last 3 firefox version",
+			"last 5 safari version"
+		]
+	},
+	"engines": {
+		"node": ">=22.0"
+	}
+}

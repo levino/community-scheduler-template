@@ -1,0 +1,98 @@
+# Parents/Guardians - Community Service
+# School Year 2025/26
+# These are example data for demonstration purposes
+
+# Monday Group
+- id: anna-mueller
+  firstName: Anna
+  lastName: Müller
+  phone: "+491555001001"
+  weekday: monday
+
+- id: thomas-schmidt
+  firstName: Thomas
+  lastName: Schmidt
+  phone: "+491555001002"
+  weekday: monday
+
+- id: julia-weber
+  firstName: Julia
+  lastName: Weber
+  phone: "+491555001003"
+  weekday: monday
+
+- id: michael-fischer
+  firstName: Michael
+  lastName: Fischer
+  phone: "+491555001004"
+  weekday: monday
+
+- id: sarah-hoffmann
+  firstName: Sarah
+  lastName: Hoffmann
+  phone: "+491555001005"
+  weekday: monday
+
+- id: david-klein
+  firstName: David
+  lastName: Klein
+  phone: "+491555001006"
+  weekday: monday
+
+# Tuesday Group
+- id: lisa-becker
+  firstName: Lisa
+  lastName: Becker
+  phone: "+491555002001"
+  weekday: tuesday
+
+- id: martin-schulz
+  firstName: Martin
+  lastName: Schulz
+  phone: "+491555002002"
+  weekday: tuesday
+
+- id: petra-wagner
+  firstName: Petra
+  lastName: Wagner
+  phone: "+491555002003"
+  weekday: tuesday
+
+# Wednesday Group
+- id: stefan-richter
+  firstName: Stefan
+  lastName: Richter
+  phone: "+491555003001"
+  weekday: wednesday
+
+- id: claudia-koch
+  firstName: Claudia
+  lastName: Koch
+  phone: "+491555003002"
+  weekday: wednesday
+
+# Thursday Group
+- id: frank-braun
+  firstName: Frank
+  lastName: Braun
+  phone: "+491555004001"
+  weekday: thursday
+
+- id: sabine-krueger
+  firstName: Sabine
+  lastName: Krüger
+  phone: "+491555004002"
+  weekday: thursday
+
+# Friday Group
+- id: alexander-wolf
+  firstName: Alexander
+  lastName: Wolf
+  phone: "+491555005001"
+  weekday: friday
+
+- id: nina-meyer
+  firstName: Nina
+  lastName: Meyer
+  phone: "+491555005002"
+  weekday: friday

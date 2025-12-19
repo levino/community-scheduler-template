@@ -1,0 +1,201 @@
+# Services - Community Service Schedule
+# School Year 2025/26
+# These are example data for demonstration purposes
+
+# Past services (August - October)
+- id: "1"
+  date: 2025-08-04
+  parents: ["anna-mueller", "thomas-schmidt"]
+
+- id: "2"
+  date: 2025-08-05
+  parents: ["lisa-becker", "martin-schulz"]
+
+- id: "3"
+  date: 2025-08-06
+  parents: ["stefan-richter", "claudia-koch"]
+
+- id: "4"
+  date: 2025-08-11
+  parents: ["julia-weber", "michael-fischer"]
+
+- id: "5"
+  date: 2025-08-12
+  parents: ["petra-wagner", "martin-schulz"]
+
+- id: "6"
+  date: 2025-08-18
+  parents: ["sarah-hoffmann", "david-klein"]
+
+- id: "7"
+  date: 2025-08-19
+  parents: ["lisa-becker", "petra-wagner"]
+
+- id: "8"
+  date: 2025-08-25
+  parents: ["anna-mueller", "julia-weber"]
+
+- id: "9"
+  date: 2025-09-01
+  parents: ["thomas-schmidt", "michael-fischer"]
+
+- id: "10"
+  date: 2025-09-08
+  parents: ["sarah-hoffmann", "julia-weber"]
+
+- id: "11"
+  date: 2025-09-15
+  parents: ["david-klein", "anna-mueller"]
+
+- id: "12"
+  date: 2025-09-22
+  parents: ["michael-fischer", "thomas-schmidt"]
+
+- id: "13"
+  date: 2025-09-29
+  parents: ["julia-weber", "sarah-hoffmann"]
+
+- id: "14"
+  date: 2025-10-06
+  parents: ["anna-mueller", "david-klein"]
+
+# Upcoming services (November 2025 - June 2026)
+- id: "15"
+  date: 2025-11-03
+  parents: ["thomas-schmidt", "michael-fischer"]
+
+- id: "16"
+  date: 2025-11-05
+  parents: ["lisa-becker", "martin-schulz"]
+
+- id: "17"
+  date: 2025-11-10
+  parents: ["julia-weber", "sarah-hoffmann"]
+
+- id: "18"
+  date: 2025-11-17
+  parents: ["david-klein", "anna-mueller"]
+
+- id: "19"
+  date: 2025-11-19
+  parents: ["petra-wagner", "lisa-becker"]
+
+- id: "20"
+  date: 2025-11-24
+  parents: ["michael-fischer", "thomas-schmidt"]
+
+- id: "21"
+  date: 2025-12-01
+  parents: ["sarah-hoffmann", "julia-weber"]
+
+- id: "22"
+  date: 2025-12-03
+  parents: ["martin-schulz", "petra-wagner"]
+
+- id: "23"
+  date: 2025-12-08
+  parents: ["anna-mueller", "david-klein"]
+
+- id: "24"
+  date: 2025-12-15
+  parents: ["thomas-schmidt", "michael-fischer"]
+
+- id: "25"
+  date: 2025-12-22
+  parents: ["julia-weber", "sarah-hoffmann"]
+
+- id: "26"
+  date: 2026-01-12
+  parents: ["david-klein", "anna-mueller"]
+
+- id: "27"
+  date: 2026-01-14
+  parents: ["lisa-becker", "martin-schulz"]
+
+- id: "28"
+  date: 2026-01-19
+  parents: ["michael-fischer", "thomas-schmidt"]
+
+- id: "29"
+  date: 2026-01-21
+  parents: ["petra-wagner", "lisa-becker"]
+
+- id: "30"
+  date: 2026-01-26
+  parents: ["sarah-hoffmann", "julia-weber"]
+
+- id: "31"
+  date: 2026-02-02
+  parents: ["anna-mueller", "david-klein"]
+
+- id: "32"
+  date: 2026-02-09
+  parents: ["thomas-schmidt", "michael-fischer"]
+
+- id: "33"
+  date: 2026-02-16
+  parents: ["julia-weber", "sarah-hoffmann"]
+
+- id: "34"
+  date: 2026-02-23
+  parents: ["david-klein", "anna-mueller"]
+
+- id: "35"
+  date: 2026-03-02
+  parents: ["michael-fischer", "thomas-schmidt"]
+
+- id: "36"
+  date: 2026-03-09
+  parents: ["sarah-hoffmann", "julia-weber"]
+
+- id: "37"
+  date: 2026-03-16
+  parents: ["anna-mueller", "david-klein"]
+
+- id: "38"
+  date: 2026-03-23
+  parents: ["thomas-schmidt", "michael-fischer"]
+
+- id: "39"
+  date: 2026-04-13
+  parents: ["julia-weber", "sarah-hoffmann"]
+
+- id: "40"
+  date: 2026-04-20
+  parents: ["david-klein", "anna-mueller"]
+
+- id: "41"
+  date: 2026-04-27
+  parents: ["michael-fischer", "thomas-schmidt"]
+
+- id: "42"
+  date: 2026-05-04
+  parents: ["sarah-hoffmann", "julia-weber"]
+
+- id: "43"
+  date: 2026-05-11
+  parents: ["anna-mueller", "david-klein"]
+
+- id: "44"
+  date: 2026-05-18
+  parents: ["thomas-schmidt", "michael-fischer"]
+
+- id: "45"
+  date: 2026-06-01
+  parents: ["julia-weber", "sarah-hoffmann"]
+
+- id: "46"
+  date: 2026-06-08
+  parents: ["david-klein", "anna-mueller"]
+
+- id: "47"
+  date: 2026-06-15
+  parents: ["michael-fischer", "thomas-schmidt"]
+
+- id: "48"
+  date: 2026-06-22
+  parents: ["sarah-hoffmann", "julia-weber"]
+
+- id: "49"
+  date: 2026-06-29
+  parents: ["anna-mueller", "david-klein"]

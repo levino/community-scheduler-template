@@ -1,0 +1,96 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content'
+import Layout from '@levino/shipyard-base/layouts/Page.astro'
+import { format } from 'date-fns'
+import { de } from 'date-fns/locale'
+
+type Parent = CollectionEntry<'eltern'>
+type Service = CollectionEntry<'dienstplan'>
+
+// Get build time as cutoff for done/upcoming
+const buildTime = new Date()
+
+// Fetch all parents and services
+const allParents = await getCollection('eltern')
+const allServices = await getCollection('dienstplan')
+
+// Create statistics for each parent
+interface ParentStats {
+	parent: Parent
+	doneCount: number
+	upcomingCount: number
+}
+
+const parentStats: ParentStats[] = allParents.map((parent) => {
+	const doneCount = allServices.filter(
+		(service) =>
+			service.data.date < buildTime &&
+			service.data.parents.some((p) => p.id === parent.id),
+	).length
+
+	const upcomingCount = allServices.filter(
+		(service) =>
+			service.data.date >= buildTime &&
+			service.data.parents.some((p) => p.id === parent.id),
+	).length
+
+	return {
+		parent,
+		doneCount,
+		upcomingCount,
+	}
+})
+
+// Sort alphabetically by last name
+const sortedStats = parentStats.sort((a, b) =>
+	a.parent.data.lastName.localeCompare(b.parent.data.lastName),
+)
+
+// Weekday translation
+const weekdayTranslation = {
+	monday: 'Montag',
+	tuesday: 'Dienstag',
+	wednesday: 'Mittwoch',
+	thursday: 'Donnerstag',
+	friday: 'Freitag',
+} as const
+---
+
+<Layout
+  title="Dienstplan Auswertung"
+  description="Übersicht über alle Eltern und ihre geleisteten Dienste im Wäldchendienst"
+>
+  <div class="prose max-w-4xl mx-auto">
+    <h1>Dienstplan Auswertung</h1>
+
+    <p>
+      Übersicht über alle Eltern und ihre geleisteten und anstehenden Dienste im Wäldchendienst der Waldorfschule Hannover Maschsee für das Schuljahr 2025/26.
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Gruppe</th>
+          <th>Erledigt</th>
+          <th>Anstehend</th>
+          <th>Gesamt</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sortedStats.map((stat) => (
+          <tr>
+            <td><strong>{stat.parent.data.fullName}</strong></td>
+            <td>{weekdayTranslation[stat.parent.data.weekday]}</td>
+            <td>{stat.doneCount}</td>
+            <td>{stat.upcomingCount}</td>
+            <td>{stat.doneCount + stat.upcomingCount}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+
+    <hr />
+    <p><em>Letzte Aktualisierung: {format(buildTime, 'MMMM yyyy', { locale: de })}</em></p>
+  </div>
+</Layout>

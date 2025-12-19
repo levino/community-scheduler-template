@@ -1,0 +1,8 @@
+# Lefthook configuration
+# https://lefthook.dev/configuration/
+
+pre-commit:
+  commands:
+    biome:
+      glob: "*.{js,ts,jsx,tsx,json,astro}"
+      run: npx biome check --write {staged_files} && git add {staged_files}

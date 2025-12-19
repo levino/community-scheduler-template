@@ -1,0 +1,169 @@
+---
+import { type CollectionEntry, getCollection, getEntries } from 'astro:content'
+import Layout from '@levino/shipyard-base/layouts/Page.astro'
+import { compareAsc, format, getDay } from 'date-fns'
+import { de } from 'date-fns/locale'
+import { __, equals, pathSatisfies, pipe } from 'ramda'
+
+type Service = CollectionEntry<'dienstplan'>
+// Generate static paths for all weekdays
+export async function getStaticPaths() {
+	return (
+		['monday', 'tuesday', 'wednesday', 'thursday', 'friday'] as const
+	).map((day) => ({ params: { day } }))
+}
+
+// Weekday mapping (same as in getStaticPaths)
+const weekdayMap = {
+	monday: 'Montag',
+	tuesday: 'Dienstag',
+	wednesday: 'Mittwoch',
+	thursday: 'Donnerstag',
+	friday: 'Freitag',
+} as const
+
+const { day } = Astro.params
+const weekdayGerman = weekdayMap[day]
+
+// Get day index (0 = Sunday, 1 = Monday, etc.)
+const dayIndex = [
+	'sunday',
+	'monday',
+	'tuesday',
+	'wednesday',
+	'thursday',
+	'friday',
+	'saturday',
+].indexOf(day)
+
+// Fetch only relevant parents using collection query filter
+const dayParents = await getCollection(
+	'eltern',
+	({ data }) => data.weekday === day,
+)
+
+// Helper functions
+const loadParents = (services: Service[]) =>
+	Promise.all(
+		services.map(async (service) => ({
+			...service,
+			data: {
+				...service.data,
+				parents: await getEntries(service.data.parents),
+			},
+		})),
+	)
+
+const byDate = (a: Service, b: Service) => compareAsc(a.data.date, b.data.date)
+
+// Get build time as cutoff for done/upcoming
+const buildTime = new Date()
+
+// Fetch all services for this weekday
+const allDayServices = (
+	await getCollection('dienstplan', (service) => {
+		return getDay(service.data.date) === dayIndex
+	})
+).sort(byDate)
+
+// Split by build time
+const doneServicesList = allDayServices.filter((s) => s.data.date < buildTime)
+const upcomingServicesList = allDayServices.filter(
+	(s) => s.data.date >= buildTime,
+)
+
+// Resolve parent references
+const doneServices = await loadParents(doneServicesList)
+const upcomingServices = await loadParents(upcomingServicesList)
+
+// Format date
+const formatDatum = (date: Date): string =>
+	format(date, 'dd.MM.yyyy', { locale: de })
+---
+
+<Layout
+  title={`Dienstplan ${weekdayGerman}`}
+  description={`Dienstplan für die ${weekdayGerman}sgruppe im Wäldchendienst`}
+>
+  <div class="prose max-w-4xl mx-auto">
+    <h1>Dienstplan {weekdayGerman}</h1>
+
+    <h2>2025/2026</h2>
+
+    {upcomingServices.length > 0 && (
+      <>
+        <h3>Anstehende Dienste</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Datum</th>
+              <th>Betreuer:innen</th>
+            </tr>
+          </thead>
+          <tbody>
+            {upcomingServices.map((dienst) => (
+              <tr>
+                <td>{formatDatum(dienst.data.date)}</td>
+                <td>{dienst.data.parents.map((p) => p.data.fullName).join(', ')}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </>
+    )}
+
+    {dayParents.length > 0 && (
+      <>
+        <h2>Ansprechpartner:innen {weekdayGerman}sgruppe</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Telefon</th>
+            </tr>
+          </thead>
+          <tbody>
+            {dayParents.map((parent) => (
+              <tr>
+                <td><strong>{parent.data.fullName}</strong></td>
+                <td><a href={`tel:${parent.data.phone}`}>{parent.data.phone}</a></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </>
+    )}
+
+    <h2>Wichtige Hinweise</h2>
+    <ul>
+      <li>Die Betreuung findet im <strong>Wäldchen</strong> statt</li>
+      <li>Bei Verhinderung bitte rechtzeitig Ersatz organisieren</li>
+      <li>Änderungen oder Tausche bitte selbständig eintragen und kommunizieren</li>
+    </ul>
+
+    {doneServices.length > 0 && (
+      <>
+        <h2>Erledigte Dienste</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Datum</th>
+              <th>Betreuer:innen</th>
+            </tr>
+          </thead>
+          <tbody>
+            {doneServices.map((dienst) => (
+              <tr>
+                <td>{formatDatum(dienst.data.date)}</td>
+                <td>{dienst.data.parents.map((p) => p.data.fullName).join(', ')}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </>
+    )}
+
+    <hr />
+    <p><em>Letzte Aktualisierung: {format(buildTime, 'MMMM yyyy', { locale: de })}</em></p>
+  </div>
+</Layout>
