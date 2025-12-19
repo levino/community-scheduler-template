@@ -56,8 +56,9 @@ const loadParents = (services: Service[]) =>
 
 const byDate = (a: Service, b: Service) => compareAsc(a.data.date, b.data.date)
 
-// Get build time as cutoff for done/upcoming
-const buildTime = new Date()
+// Fixed cutoff date for demo: 1.1.2026
+// In production, use: const buildTime = new Date()
+const buildTime = new Date('2026-01-01')
 
 // Fetch all services for this weekday
 const allDayServices = (
