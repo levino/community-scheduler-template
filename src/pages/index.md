@@ -21,8 +21,19 @@ Diese Demo zeigt ein reales Planungssystem, das ursprünglich für das Waldprogr
 - **Claude Code** für Änderungen in einfachem Deutsch
 - **Static Site Generation** für blitzschnelle, sichere Auslieferung
 - **YAML-Dateien** statt Datenbanken
+- **Automatische SMS-Erinnerungen** via Twilio (optional)
 
 **Ergebnis:** Über 34.000€ gespart im ersten Jahr, keine Wartungslast.
+
+### Perfekt geeignet für:
+
+- 🏫 **Schulen**: Eltern-Freiwillige, Pausenaufsichten, Mensadienste, Stundenpläne (mit Anpassung)
+- 🏥 **Gesundheitswesen**: Schichtpläne, Bereitschaftsdienste
+- 🌱 **Dorfgemeinschaften**: Blumen gießen, Gemeinschaftsgarten
+- ⛪ **Religionsgemeinschaften**: Kirchengruppen, Gottesdienst-Koordination
+- 👁️ **Nachbarschaft**: Nachbarschaftswachen, Mülltonnen-Rotationen
+- 🎨 **Vereine**: Veranstaltungshilfe, Technik-Teams
+- 🏢 **Büros**: Meeting-Raum-Reinigung, Küchendienste
 
 ---
 
@@ -101,11 +112,21 @@ Installiere [Claude Code GitHub Action](https://docs.claude.com/claude-code/gith
 - ✅ **Kein Backend nötig** - GitHub ist dein CMS
 - ✅ **KI-gestützte Updates** - Claude Code hilft bei Änderungen
 - ✅ **Self-Service für User** - sie bearbeiten Daten direkt
+- ✅ **Automatische Erinnerungen** - SMS-Benachrichtigungen via Twilio (siehe Original-Projekt)
 - ✅ **Typsicher** - Zod-Validierung fängt Fehler zur Build-Zeit ab
 - ✅ **Mobile-friendly** - funktioniert perfekt auf Smartphones
 - ✅ **Blitzschnell** - vor-gerenderte statische Seiten
 - ✅ **Null Wartung** - keine Server zu verwalten
 - ✅ **Git History** - eingebautes Audit-Log
+
+### Aktive Aktionen möglich
+
+Das Template unterstützt nicht nur Anzeige, sondern auch **aktive Aktionen**:
+
+- 📱 **SMS-Erinnerungen**: Das [Original-Projekt](https://github.com/levino/waeldchendienst-waldorfschule-hannover-maschsee) enthält fertigen Code für automatische SMS-Benachrichtigungen via Twilio
+- 📧 **Email-Benachrichtigungen**: Einfach hinzuzufügen via GitHub Actions
+- 📅 **Kalender-Sync**: Integration mit Google Calendar, iCal etc. möglich
+- 🔔 **Webhook-Integration**: Verbinde mit Slack, Discord, oder anderen Tools
 
 ---
 
@@ -131,9 +152,21 @@ Dieses Template wurde von [Levin Keller](https://levinkeller.de) mit Unterstütz
 
 **Aus Frustration geboren:** Die Koordination von Eltern-Freiwilligen sollte nicht erfordern, noch ein Admin-Panel zu bauen. Dieses Template beweist, dass man nicht immer ein Backend braucht.
 
-### Kontakt & Support
+### Professionelle Dienstleistungen
 
-- **Website:** [levinkeller.de](https://levinkeller.de)
+Brauchst du Hilfe beim Deployment oder Anpassungen für deinen speziellen Anwendungsfall?
+
+**Levin Keller bietet an:**
+- 🚀 **Deployment-Service** - Komplette Einrichtung und Konfiguration
+- 🔧 **Anpassungen & Erweiterungen** - Zusätzliche Features, Custom Styling, Integrationen
+- 📱 **SMS/Email-Integration** - Automatische Reminder-Systeme aufsetzen
+- 📊 **Custom Dashboards** - Spezielle Auswertungen und Statistiken
+- 🎓 **Schulungen** - Dein Team lernt, das System selbst zu pflegen
+
+**Kontakt für Anfragen:** [levinkeller.de](https://levinkeller.de)
+
+### Community Support
+
 - **GitHub:** [@levino](https://github.com/levino)
 - **Issues:** [Bugs melden oder Features anfragen](https://github.com/levino/community-scheduler-template/issues)
 - **Discussions:** [Fragen stellen oder Ideen teilen](https://github.com/levino/community-scheduler-template/discussions)

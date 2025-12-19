@@ -1,72 +1,167 @@
 # Community Scheduler Template
 
-> **GitHub as your admin interface. AI as your developer. Zero backend code.**
+> **A production-ready scheduling system that eliminates the need for custom admin panels and backend development.**
 >
-> A production-ready template that eliminates the need for custom admin panels, CRUD interfaces, and backend development.
+> Built for recurring volunteer schedules with self-service editing, automated reminders, and AI-powered updates.
 
 [![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
 
-## 💡 The Core Idea
+## 📅 What This Template Does
 
-**Traditional approach:**
-1. Build frontend ✅
-2. Build backend API ⏰💰
-3. Build admin interface ⏰💰💰
-4. Maintain all of it forever ⏰💰💰💰
+Originally built for a Waldorf school's forest service program, this template provides a complete scheduling system with:
 
-**This template:**
-1. Build frontend ✅
-2. Use GitHub as admin interface ✅ (free!)
-3. Use Claude Code for changes ✅ (AI-powered!)
-4. Deploy anywhere static ✅ (pennies!)
+### Core Features
 
-**You just saved weeks of development time and thousands in costs.**
-
----
-
-## 🎯 Why This Changes Everything
-
-### No Admin Panel Required
-
-Instead of building complex CRUD interfaces with authentication, role management, and endless forms:
-
-- **Users edit data directly** via GitHub (text files, not code)
-- **Pull Requests are your review system** - approve changes with one click
-- **AI assists with changes** - Claude Code can make edits based on plain English requests
-- **Git history is your audit log** - see who changed what, when, and why
-
-### Self-Service for Everyone
-
-Users can:
+✅ **Weekly rotating schedules** across multiple weekday groups (Monday-Friday)
+✅ **Self-service for participants** - anyone can:
 - Add themselves to the schedule
-- Swap duty assignments
+- Swap duty assignments with others
 - Update their contact information
 - Request schedule changes
 
-Admins just:
-- Review pull requests (5 seconds)
-- Merge or request changes
-- That's it. Really.
+✅ **Automated reminders** - active actions like:
+- **SMS notifications** sent day before duties (via Twilio integration)
+- Email reminders (easy to add)
+- Calendar integrations (via webhooks)
 
-### Real-World Example
+✅ **Statistics dashboard** showing:
+- Who has served and when
+- Total services per person
+- Upcoming commitments
 
-**Traditional workflow:**
+✅ **Mobile-friendly design**:
+- One-tap phone calling
+- Responsive layout
+- Fast loading (static pages)
+
+✅ **Type-safe data** with Zod schema validation
+- Catches errors at build time
+- No runtime surprises
+- Clear data structure
+
+### Perfect For
+
+- 🏫 **Schools**: Parent volunteer programs, recess monitoring, cafeteria duties
+- 📚 **Educational Institutions**: Library volunteers, tutor schedules
+- 🏥 **Healthcare**: Shift schedules (with some customization), on-call rotations
+- 🌱 **Village Communities**: Flower watering, community garden maintenance
+- ⛪ **Religious Communities**: Church group schedules, service coordination
+- 👁️ **Neighborhoods**: Neighborhood watch, trash bin rotations
+- 🎨 **Cultural Associations**: Event support, tech team schedules
+- 🏢 **Offices**: Meeting room cleaning, kitchen duties
+- 🔄 **Any recurring group-based scheduling**
+
+---
+
+## 💰 The Business Case
+
+### Traditional Approach
+
+**Development:**
+- Frontend: 2 weeks
+- Backend API: 2 weeks
+- Admin interface: 3 weeks
+- Authentication/permissions: 1 week
+- Testing/deployment: 1 week
+**Total: 9 weeks @ $100/hr = $36,000**
+
+**Hosting:**
+- Backend server: $20/month
+- Database: $15/month
+- SSL certificates, monitoring: $10/month
+**Total: $45/month = $540/year**
+
+### This Template
+
+**Development:**
+- Customize frontend: 2 days
+- Configure deployment: 30 minutes
+**Total: 2.5 days @ $100/hr = $2,000**
+
+**Hosting:**
+- Static hosting: **$0-5/month** (GitHub Pages/Cloudflare/Netlify free tiers)
+- No database needed
+- No backend server needed
+**Total: ~$0-60/year**
+
+**💡 You save $34,000+ in first year alone.**
+
+Plus: Lower maintenance, better security (no server to hack), infinite scalability (CDN-based).
+
+---
+
+## 🎯 How It Works: GitHub as Your Admin Interface
+
+This template's innovation is using **GitHub itself** as the admin interface, eliminating weeks of CRUD development.
+
+### The Secret: No Admin Panel Needed
+
+Instead of building complex admin interfaces with authentication, role management, and endless forms:
+
+- **Users edit data directly** - simple text files in GitHub (no coding required)
+- **Pull Requests = your review system** - approve changes with one click
+- **AI assists with changes** - Claude Code makes edits from plain English requests
+- **Git history = audit log** - complete record of who changed what and when
+
+### Real-World Workflow
+
+**Traditional approach:**
 1. User emails admin: "Can you swap my duty from April 15 to April 22?"
 2. Admin logs into backend
 3. Admin navigates through 5 screens
-4. Admin updates database
+4. Admin updates database manually
 5. Admin confirms via email
-**Time: 10-15 minutes**
+**⏱️ Time: 10-15 minutes per request**
 
 **With this template:**
 1. User opens GitHub Issue: "@claude-code please swap my duty from April 15 to April 22"
-2. Claude Code creates Pull Request
-3. Admin clicks "Merge"
-4. Site auto-deploys
-**Time: 30 seconds**
+2. Claude Code creates Pull Request automatically
+3. Admin reviews (sees exactly what changes) and clicks "Merge"
+4. Site auto-deploys with changes live in seconds
+**⏱️ Time: 30 seconds total**
+
+### Self-Service Empowers Everyone
+
+**Users can:**
+- Submit changes themselves via GitHub Issues
+- See exact changes before they're applied (in the PR)
+- No technical knowledge required - just plain English
+- Get instant confirmation when merged
+
+**Admins just:**
+- Review pull requests (visual diff shows changes)
+- Merge or request modifications
+- Trust but verify - no manual data entry
+
+### AI-Powered Updates
+
+Once you install [Claude Code GitHub Action](https://docs.claude.com/claude-code/github-actions), users can request changes like:
+
+**Adding volunteers:**
+```
+@claude-code please add:
+Name: Maria Garcia
+Phone: +1555001234
+Group: Wednesday
+```
+
+**Swapping duties:**
+```
+@claude-code swap services:
+- Move John from 2025-04-15 to 2025-04-22
+- Move Sarah from 2025-04-22 to 2025-04-15
+```
+
+**Bulk scheduling:**
+```
+@claude-code schedule Monday services for next quarter
+with alternating pairs: Anna/Thomas, Julia/Michael
+```
+
+Claude Code creates a PR showing exactly what will change. You review, merge, done.
 
 ---
 
@@ -74,7 +169,7 @@ Admins just:
 
 ### The Trade-off: Data Visibility
 
-- **Data is in a GitHub repository** - anyone with repo access can see it
+- **Data lives in GitHub repository** - anyone with repo access can see it
 - For many use cases (community schedules, volunteer rosters), this is **perfectly fine**
 - Your organization likely already shares this info via email/spreadsheets anyway
 
@@ -86,29 +181,9 @@ Admins just:
 - Data is hidden from public but accessible to your team
 
 **For truly private data** (rare for schedules):
-- Add a simple authentication layer (Cloudflare Access, BasicAuth, etc.)
+- Add simple authentication layer (Cloudflare Access, BasicAuth, etc.)
 - Still no backend needed! Auth happens at CDN/edge level
 - Users still edit via GitHub, visitors need credentials to view
-
----
-
-## 📅 What This Template Provides
-
-Originally built for a Waldorf school's forest service program, this template handles:
-
-- **Recurring volunteer schedules** across multiple weekday groups
-- **Automatic past/upcoming separation** (build-time calculation)
-- **Statistics dashboard** showing who's done what
-- **Mobile-friendly** design with one-tap calling
-- **Type-safe data** with Zod schema validation
-
-**Perfect for:**
-- School parent volunteer programs
-- Community garden maintenance
-- Neighborhood watch rotations
-- Library volunteer coordination
-- Church group schedules
-- Any recurring group-based scheduling
 
 ---
 
@@ -133,6 +208,7 @@ Edit `src/content/parent.yaml`:
   lastName: Doe
   phone: "+1234567890"
   weekday: monday
+  active: true
 ```
 
 Edit `src/content/service.yaml`:
@@ -144,90 +220,52 @@ Edit `src/content/service.yaml`:
 
 ### 3. Deploy
 
-Push to GitHub. Connect to:
+Push to GitHub and connect to:
 - **GitHub Pages** (free, automatic)
-- **Cloudflare Pages** (free, fast)
-- **Netlify** (free tier generous)
-- **Vercel** (free tier generous)
+- **Cloudflare Pages/Workers** (free, blazing fast)
+- **Netlify** (generous free tier)
+- **Vercel** (generous free tier)
 
 All have first-class GitHub integration. Push = deploy. Done.
 
----
+### 4. Add SMS Reminders (Optional)
 
-## 🤖 AI-Powered Workflows
+The original project includes SMS reminder functionality via Twilio:
+- Automated daily reminders to participants
+- Sent 18 hours before duty time
+- Personalized messages with co-participant names
+- Runs via GitHub Actions (scheduled workflow)
 
-### Setup Claude Code (Optional but Recommended)
+See the [original implementation](https://github.com/levino/waeldchendienst-waldorfschule-hannover-maschsee) for reference code.
 
-1. Install [Claude Code GitHub Action](https://docs.claude.com/claude-code/github-actions)
-2. Users can now request changes via GitHub Issues
+**Setup:**
+1. Create Twilio account (free trial available)
+2. Add GitHub Secrets: `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`
+3. Copy workflow from original project
+4. Configure schedule in `.github/workflows/sms-reminder.yml`
 
-### Example Requests
-
-**Adding volunteers:**
-```
-@claude-code please add:
-Name: Maria Garcia
-Phone: +1555001234
-Group: Wednesday
-```
-
-**Swapping duties:**
-```
-@claude-code swap services:
-- Move John from 2025-04-15 to 2025-04-22
-- Move Sarah from 2025-04-22 to 2025-04-15
-```
-
-**Bulk scheduling:**
-```
-@claude-code schedule Monday services for next quarter
-with alternating pairs: Anna/Thomas, Julia/Michael
-```
-
-Claude Code creates a PR. You review and merge. Site deploys automatically.
+**Cost:** ~$0.01 per SMS (Twilio pricing)
 
 ---
 
-## 💰 Cost Comparison
+## 🛠️ Technology Stack
 
-### Traditional Approach
+- **[Astro 5.16+](https://astro.build)** - Static site generator with Content Collections
+- **TypeScript 5.6** - Type safety throughout
+- **Tailwind CSS + DaisyUI** - Modern, responsive styling
+- **Zod** - Runtime schema validation
+- **Lefthook + Biome** - Auto-formatting and code quality
+- **date-fns + Ramda** - Functional utilities
 
-**Development:**
-- Frontend: 2 weeks
-- Backend API: 2 weeks
-- Admin interface: 3 weeks
-- Authentication/permissions: 1 week
-- Testing/deployment: 1 week
-**Total: 9 weeks @ $100/hr = $36,000**
-
-**Hosting:**
-- Backend server: $20/month
-- Database: $15/month
-- SSL certificates, monitoring, etc: $10/month
-**Total: $45/month = $540/year**
-
-### This Template
-
-**Development:**
-- Customize frontend: 2 days
-- Deploy: 30 minutes
-**Total: 2.5 days @ $100/hr = $2,000**
-
-**Hosting:**
-- Static hosting: **$0-5/month**
-- No database needed
-- No backend server needed
-**Total: ~$0-60/year**
-
-**You save $34,000+ in first year alone.**
+No framework lock-in. Standard web technologies. Easy to maintain.
 
 ---
 
-## 📋 How It Works
+## 📋 How It Works Technically
 
 ### Data Storage
 
-All data lives in simple YAML files:
+All data lives in simple YAML files (not databases):
 
 **Volunteers** (`src/content/parent.yaml`):
 ```yaml
@@ -236,6 +274,7 @@ All data lives in simple YAML files:
   lastName: Doe
   phone: "+1234567890"
   weekday: monday
+  active: true
 ```
 
 **Schedule** (`src/content/service.yaml`):
@@ -255,31 +294,19 @@ const elternSchema = z.object({
   lastName: z.string(),
   phone: z.string(),
   weekday: z.enum(['monday', 'tuesday', 'wednesday', 'thursday', 'friday']),
+  active: z.boolean(),
 })
 ```
 
-Bad data = build fails. No runtime errors.
+**Bad data = build fails.** No runtime errors. Ever.
 
 ### Static Generation
 
 Astro generates static HTML at build time:
-- **Blazing fast** - pre-rendered pages
-- **Secure** - no server to hack
+- **Blazing fast** - pre-rendered pages served from CDN
+- **Secure** - no server to hack, no database to breach
 - **Cheap** - just file serving
-- **Scalable** - CDN handles any traffic
-
----
-
-## 🛠️ Technology Stack
-
-- **[Astro 5.16+](https://astro.build)** - Static site generator
-- **TypeScript 5.6** - Type safety
-- **Content Collections** - Type-safe data loading
-- **Tailwind CSS + DaisyUI** - Styling
-- **Lefthook + Biome** - Auto-formatting
-- **date-fns + Ramda** - Utilities
-
-No framework lock-in. Standard web technologies. Easy to maintain.
+- **Scalable** - handles millions of visitors at no extra cost
 
 ---
 
@@ -288,28 +315,52 @@ No framework lock-in. Standard web technologies. Easy to maintain.
 This template demonstrates:
 
 **Modern Architecture:**
-- Static site generation
-- Git-based CMS
-- Edge deployment
+- Static site generation (JAMstack)
+- Git-based CMS approach
+- Edge deployment strategies
 - Type-safe data pipelines
 
 **AI-Human Collaboration:**
 - GitHub as interface layer
-- AI-assisted data changes
+- AI-assisted data management
 - Pull request workflows
 - Automated deployments
 
 **Business Value:**
-- Radical cost reduction
-- Faster time-to-market
-- Lower maintenance burden
-- Better user experience
+- Radical cost reduction without sacrificing features
+- Faster time-to-market (days vs months)
+- Lower maintenance burden (no servers)
+- Better user experience (instant loads)
 
 Perfect for:
 - Learning modern web development
 - Teaching software architecture
-- Understanding JAMstack
+- Understanding JAMstack principles
 - Demonstrating AI-assisted workflows
+
+---
+
+## 💡 Inspiration & Background
+
+This template was born from real frustration: coordinating parent volunteers for a Waldorf school's weekly forest program.
+
+**We didn't want to:**
+- Build yet another admin panel (weeks of work)
+- Pay $50/month for a SaaS scheduling tool
+- Maintain a backend server (security updates, backups, monitoring)
+- Deal with user authentication and permissions
+
+**We wanted:**
+- Transparent scheduling everyone could see
+- Easy updates without technical barriers
+- Historical tracking built-in
+- Mobile access for quick lookups
+- Active reminders so people don't forget
+
+**Solution:**
+GitHub + AI + Static Site + Twilio = Complete system, no backend!
+
+The result handles real workloads, costs almost nothing, and took days (not months) to build.
 
 ---
 
@@ -322,6 +373,7 @@ This template was built with AI assistance (Claude Code) and continues to evolve
 - Suggest features
 - Share your implementation
 - Improve documentation
+- Add integrations (email, calendar, etc.)
 
 Fork, modify, share. That's the spirit!
 
@@ -333,34 +385,26 @@ MIT License - use it for anything!
 
 ---
 
-## 💡 Inspiration & Background
+## 🆘 Support & Professional Services
 
-This template was born from a real frustration: coordinating parent volunteers for a Waldorf school's weekly forest program.
-
-**We didn't want to:**
-- Build yet another admin panel
-- Pay $50/month for a SaaS scheduling tool
-- Maintain a backend server
-- Deal with user management
-
-**We wanted:**
-- Transparent scheduling everyone could see
-- Easy updates without technical barriers
-- Historical tracking built-in (Git!)
-- Mobile access for quick lookups
-
-**Solution:**
-GitHub + AI + Static Site = No backend needed!
-
-The result handles real workloads, costs almost nothing, and took days (not months) to build.
-
----
-
-## 🆘 Support
+### Community Support
 
 - **Issues**: [GitHub Issues](https://github.com/levino/community-scheduler-template/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/levino/community-scheduler-template/discussions)
 - **AI Help**: Open an issue with `@claude-code`
+
+### Professional Services
+
+Need help with deployment or customization for your specific use case?
+
+**[Levin Keller](https://levinkeller.de)** offers:
+- 🚀 **Deployment Service** - Complete setup and configuration
+- 🔧 **Customization & Extensions** - Additional features, custom styling, integrations
+- 📱 **SMS/Email Integration** - Automated reminder systems
+- 📊 **Custom Dashboards** - Specialized analytics and statistics
+- 🎓 **Training** - Teach your team to maintain the system
+
+**Contact:** Visit [levinkeller.de](https://levinkeller.de) for inquiries
 
 ---
 
