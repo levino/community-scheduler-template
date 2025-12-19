@@ -61,4 +61,15 @@ Du kannst nicht an deinem Termin? Kein Problem!
 
 ---
 
+## 🔒 Zugriffsschutz
+
+> **Diese Demo ist öffentlich** - nur zu Demonstrationszwecken!
+>
+> In der Praxis kann das System zugriffsgeschützt betrieben werden:
+> - Privates GitHub Repository (nur für Kita-Mitglieder/Eltern)
+> - Authentication-Layer (z.B. Cloudflare Access, BasicAuth)
+> - Nur berechtigte Personen sehen und ändern Daten
+
+---
+
 **Bei Fragen zur Demo oder zum Template:** Siehe [GitHub Repository](https://github.com/levino/community-scheduler-template)

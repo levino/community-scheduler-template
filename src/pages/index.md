@@ -38,6 +38,19 @@ Diese Demo zeigt ein Planungssystem für den **Eltern-Kochdienst im Kindergarten
 
 **Ergebnis:** Über 34.000€ gespart im ersten Jahr, keine Wartungslast.
 
+---
+
+> **🔒 Hinweis zu Zugriffsschutz**
+>
+> Diese Demo ist der Einfachheit halber **öffentlich zugänglich**.
+>
+> In der Praxis kann das System natürlich **zugriffsgeschützt** betrieben werden:
+> - **Privates GitHub Repository** (nur für Organisationsmitglieder)
+> - **Authentication-Layer** vor der Website (Cloudflare Access, BasicAuth, etc.)
+> - **Nur bestimmte Personen** können Daten einsehen und ändern
+>
+> Die Demo zeigt die Funktionalität - Zugriffsschutz ist ein paar Klicks entfernt!
+
 ### Das Template funktioniert für:
 
 - 🏫 **Schulen**: Eltern-Freiwillige, Pausenaufsichten, Mensadienste, Stundenpläne (mit Anpassung)

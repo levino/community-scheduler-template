@@ -7,6 +7,10 @@
 [![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+> **💡 Live Demo:** [community-scheduler-template.example.com](https://community-scheduler-template.example.com) - Kindergarten Zipfelmütze lunch service demo
+>
+> The demo is public for simplicity. In practice, the system can be **access-protected** (private repo + authentication).
+
 ---
 
 ## 📅 What This Template Does
