@@ -83,7 +83,7 @@ const formatDatum = (date: Date): string =>
 
 <Layout
   title={`Dienstplan ${weekdayGerman}`}
-  description={`Dienstplan für die ${weekdayGerman}sgruppe im Wäldchendienst`}
+  description={`Kochdienst-Plan für die ${weekdayGerman}sgruppe im Kindergarten Zipfelmütze`}
 >
   <div class="prose max-w-4xl mx-auto">
     <h1>Dienstplan {weekdayGerman}</h1>
@@ -97,7 +97,7 @@ const formatDatum = (date: Date): string =>
           <thead>
             <tr>
               <th>Datum</th>
-              <th>Betreuer:innen</th>
+              <th>Kochteam</th>
             </tr>
           </thead>
           <tbody>
@@ -136,9 +136,11 @@ const formatDatum = (date: Date): string =>
 
     <h2>Wichtige Hinweise</h2>
     <ul>
-      <li>Die Betreuung findet im <strong>Wäldchen</strong> statt</li>
+      <li><strong>Dienstzeit:</strong> 11:00 - 13:00 Uhr (Kochen, Servieren, Aufräumen)</li>
+      <li><strong>Aufgaben:</strong> Gemüse schneiden, Kochen, Essen ausgeben, Küche putzen</li>
+      <li><strong>Immer 3 Eltern:</strong> Gemeinsam macht's mehr Spaß!</li>
       <li>Bei Verhinderung bitte rechtzeitig Ersatz organisieren</li>
-      <li>Änderungen oder Tausche bitte selbständig eintragen und kommunizieren</li>
+      <li>Änderungen oder Tausche via GitHub Issue mit @claude anfragen</li>
     </ul>
 
     {doneServices.length > 0 && (
@@ -148,7 +150,7 @@ const formatDatum = (date: Date): string =>
           <thead>
             <tr>
               <th>Datum</th>
-              <th>Betreuer:innen</th>
+              <th>Kochteam</th>
             </tr>
           </thead>
           <tbody>
