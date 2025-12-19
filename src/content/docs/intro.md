@@ -1,34 +1,64 @@
 ---
-title: Community Service Scheduler
-description: Informationen zur Organisation von Dienst- und Terminplänen
+title: Kindergarten Zipfelmütze - Mittagessen-Dienst
+description: Informationen zum Eltern-Kochdienst im Kindergarten Zipfelmütze
 ---
 
-Willkommen auf der Informationsseite des **Community Service Schedulers**.
+# 🍳 Willkommen beim Mittagessen-Dienst
 
-## Über diese Seite
+Dies ist die Planungsseite für den **Eltern-Kochdienst** im Kindergarten Zipfelmütze.
 
-Diese Seite dient der Organisation und Information von Community-Dienst-Zeitplänen. Sie wird kollaborativ von allen Teilnehmern verwaltet.
+---
 
-### Dienstpläne
+> **📌 Hinweis:** Dies ist eine **Demo-Installation** des [Community Scheduler Templates](https://github.com/levino/community-scheduler-template).
+>
+> Die hier gezeigten Daten (Namen, Telefonnummern, Termine) sind **Beispieldaten** zu Demonstrationszwecken.
+>
+> **Das Template kann für beliebige Planungszwecke angepasst werden:** Schulen, Vereine, Nachbarschaften, Büros, etc.
 
-Die Dienstpläne werden von den jeweiligen Wochentagsgruppen selbst verwaltet. **Jede Wochentagsgruppe organisiert sich selbstständig!**
+---
 
-:::note[Hinweis]
-Dies ist ein Template/Demo-Projekt. Passe die Inhalte an die Bedürfnisse deiner Organisation an.
-:::
+## 🥘 Über den Kochdienst
 
-### Ansprechpartner
+Jeden Tag von **Montag bis Freitag** übernehmen Eltern die Zubereitung des Mittagessens für die Kinder.
 
-Die [Ansprechpartner-Liste](/docs/ansprechpartnerinnen) enthält Kontaktinformationen für Koordinatoren und Freiwillige.
+### Dienstzeiten
 
-## Dienstzeiten
+**11:00 - 13:00 Uhr** (2 Stunden)
+- 11:00 - 11:45 Uhr: Kochen
+- 11:45 - 12:15 Uhr: Servieren
+- 12:15 - 13:00 Uhr: Aufräumen & Küche putzen
 
-Die Dienste finden **Montag bis Freitag** von **13:00 bis 14:00 Uhr** statt.
+### Team-Größe
 
-## Koordination
+**Immer 3 Eltern gleichzeitig** - gemeinsam macht es mehr Spaß!
 
-Die Koordination wird vom designierten Programmkoordinator übernommen.
+### Häufigkeit
 
-## Technischer Support
+Dank unserer großen Elterngemeinschaft ist **jede Familie nur alle 14 Tage** an der Reihe.
 
-Bei technischen Fragen zu dieser Website wende dich an deinen technischen Administrator.
+## 📋 Wochentagsgruppen
+
+Die Dienstpläne sind nach Wochentagen organisiert. **Jede Wochentagsgruppe verwaltet sich selbstständig!**
+
+- [Montag](/dienstplan/monday)
+- [Dienstag](/dienstplan/tuesday)
+- [Mittwoch](/dienstplan/wednesday)
+- [Donnerstag](/dienstplan/thursday)
+- [Freitag](/dienstplan/friday)
+
+## 👥 Ansprechpartner
+
+Die [Ansprechpartner-Liste](/docs/ansprechpartnerinnen) enthält Kontaktinformationen für alle Koordinatoren und Kochteams.
+
+## 🤝 Dienste tauschen
+
+Du kannst nicht an deinem Termin? Kein Problem!
+
+1. Finde jemanden zum Tauschen
+2. Öffne ein [GitHub Issue](https://github.com/levino/community-scheduler-template/issues)
+3. Schreibe: "@claude bitte tausche meinen Dienst am [DATUM] mit [NAME] am [DATUM]"
+4. Fertig! Die Koordination übernimmt den Rest.
+
+---
+
+**Bei Fragen zur Demo oder zum Template:** Siehe [GitHub Repository](https://github.com/levino/community-scheduler-template)

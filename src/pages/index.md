@@ -15,17 +15,30 @@ Dies ist eine **Live-Demonstration** des Community Scheduler Templates - eine pr
 
 ## 🎯 Was du hier siehst
 
-Diese Demo zeigt ein reales Planungssystem, das ursprünglich für das Waldprogramm einer Waldorfschule gebaut wurde. Statt ein individuelles Backend und Admin-Interface zu bauen (Wochen Arbeit, Tausende Euro Kosten), nutzen wir:
+Diese Demo zeigt ein Planungssystem für den **Eltern-Kochdienst im Kindergarten Zipfelmütze**.
 
-- **GitHub** als Admin-Interface
-- **Claude Code** für Änderungen in einfachem Deutsch
+> **📌 Wichtig:** Dies ist eine **Demo** mit **Beispieldaten**. Alle Namen, Termine und Kontaktdaten sind fiktiv.
+>
+> Das [Template](https://github.com/levino/community-scheduler-template) kann für beliebige Planungszwecke angepasst werden!
+
+### In dieser Demo:
+
+- 🍳 **Kindergarten Zipfelmütze** (fiktiv) - Eltern-Kochdienst
+- 🕐 **Dienstzeiten**: Mo-Fr 11:00-13:00 Uhr (Kochen, Servieren, Aufräumen)
+- 👥 **3 Eltern pro Dienst** - gemeinsam macht's mehr Spaß
+- 📅 **Alle 14 Tage** ist jede Familie dran (30 Familien insgesamt)
+
+### Die Technologie dahinter:
+
+- **GitHub** als Admin-Interface - kein CRUD-Panel nötig!
+- **Claude (KI)** für Änderungen in einfachem Deutsch
 - **Static Site Generation** für blitzschnelle, sichere Auslieferung
 - **YAML-Dateien** statt Datenbanken
-- **Automatische SMS-Erinnerungen** via Twilio (optional)
+- **Automatische SMS-Erinnerungen** möglich (siehe Original-Projekt)
 
 **Ergebnis:** Über 34.000€ gespart im ersten Jahr, keine Wartungslast.
 
-### Perfekt geeignet für:
+### Das Template funktioniert für:
 
 - 🏫 **Schulen**: Eltern-Freiwillige, Pausenaufsichten, Mensadienste, Stundenpläne (mit Anpassung)
 - 🏥 **Gesundheitswesen**: Schichtpläne, Bereitschaftsdienste
@@ -34,6 +47,7 @@ Diese Demo zeigt ein reales Planungssystem, das ursprünglich für das Waldprogr
 - 👁️ **Nachbarschaft**: Nachbarschaftswachen, Mülltonnen-Rotationen
 - 🎨 **Vereine**: Veranstaltungshilfe, Technik-Teams
 - 🏢 **Büros**: Meeting-Raum-Reinigung, Küchendienste
+- 🍽️ **Kindergärten/Kitas**: Kochdienste, Betreuungsdienste
 
 ---
 
@@ -41,9 +55,9 @@ Diese Demo zeigt ein reales Planungssystem, das ursprünglich für das Waldprogr
 
 ### Erkunde die Demo
 
-- [**Wochenpläne**](/dienstplan/monday) - Siehe wie Dienste nach Wochentagen organisiert sind
-- [**Statistik-Dashboard**](/dienstplan/auswertung) - Zeigt Metriken für alle Freiwilligen
-- [**Kontaktverzeichnis**](/docs/ansprechpartnerinnen) - Mobile-freundliche Kontaktliste mit direkter Anruffunktion
+- [**Wochenpläne**](/dienstplan/monday) - Siehe die Kochdienst-Pläne nach Wochentagen
+- [**Statistik-Dashboard**](/dienstplan/auswertung) - Wer hat wann gekocht? Alle Metriken auf einen Blick
+- [**Kontaktverzeichnis**](/docs/ansprechpartnerinnen) - Alle Kochteams mit direkter Anruffunktion
 
 ### Wie es funktioniert
 
@@ -53,7 +67,7 @@ Diese Demo zeigt ein reales Planungssystem, das ursprünglich für das Waldprogr
 4. **Pull Requests = Review** - Admins genehmigen mit einem Klick
 5. **Auto-Deploy** - Änderungen sind in Sekunden live
 
-**Beispiel:** "Hey @claude-code, bitte verschiebe Johns Dienst vom 15. April auf den 22. April"
+**Beispiel:** "Hey @claude, bitte tausche Annas Kochdienst am 15. Januar mit Thomas am 22. Januar"
 → Claude erstellt PR → Admin merged → Fertig in 30 Sekunden
 
 ---
@@ -103,7 +117,7 @@ Zu GitHub pushen und verbinden mit:
 
 ### 4. KI-Unterstützung einrichten (Optional)
 
-Installiere [Claude Code GitHub Action](https://docs.claude.com/claude-code/github-actions) und deine User können Änderungen in einfachem Deutsch anfragen!
+Installiere [Claude GitHub Action](https://docs.claude.com/claude-code/github-actions) und deine Eltern/User können Änderungen in einfachem Deutsch anfragen!
 
 ---
 
@@ -183,7 +197,7 @@ MIT License - frei nutzbar für jeden Zweck!
 
 Klicke "Use this template" auf [GitHub](https://github.com/levino/community-scheduler-template) und starte mit der Verwaltung von Zeitplänen ohne Backend-Aufwand.
 
-**Fragen?** Öffne ein Issue mit `@claude-code` und erhalte KI-gestützte Hilfe!
+**Fragen?** Öffne ein Issue mit `@claude` und erhalte KI-gestützte Hilfe!
 
 ---
 

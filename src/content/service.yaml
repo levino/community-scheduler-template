@@ -1,201 +1,231 @@
-# Services - Community Service Schedule
-# School Year 2025/26
-# These are example data for demonstration purposes
+# Kindergarten Zipfelmütze - Kochdienst Services
+# Jeweils 3 Eltern pro Dienst, jeder ist alle 14 Tage dran
 
-# Past services (August - October)
+# Vergangene Services (November - Anfang Dezember)
 - id: "1"
-  date: 2025-08-04
-  parents: ["anna-mueller", "thomas-schmidt"]
+  date: 2025-11-03  # Montag
+  parents: ["anna-mueller", "thomas-schmidt", "julia-weber"]
 
 - id: "2"
-  date: 2025-08-05
-  parents: ["lisa-becker", "martin-schulz"]
+  date: 2025-11-04  # Dienstag
+  parents: ["lisa-becker", "martin-schulz", "petra-hoffmann"]
 
 - id: "3"
-  date: 2025-08-06
-  parents: ["stefan-richter", "claudia-koch"]
+  date: 2025-11-05  # Mittwoch
+  parents: ["stefan-richter", "claudia-koch", "daniel-schneider"]
 
 - id: "4"
-  date: 2025-08-11
-  parents: ["julia-weber", "michael-fischer"]
+  date: 2025-11-06  # Donnerstag
+  parents: ["frank-braun", "sabine-krueger", "juergen-hartmann"]
 
 - id: "5"
-  date: 2025-08-12
-  parents: ["petra-wagner", "martin-schulz"]
+  date: 2025-11-07  # Freitag
+  parents: ["alexander-wolf", "nina-meyer", "christian-koenig"]
 
 - id: "6"
-  date: 2025-08-18
-  parents: ["sarah-hoffmann", "david-klein"]
+  date: 2025-11-10  # Montag
+  parents: ["michael-koch", "sandra-becker", "andreas-wolf"]
 
 - id: "7"
-  date: 2025-08-19
-  parents: ["lisa-becker", "petra-wagner"]
+  date: 2025-11-11  # Dienstag
+  parents: ["frank-meyer", "claudia-richter", "markus-klein"]
 
 - id: "8"
-  date: 2025-08-25
-  parents: ["anna-mueller", "julia-weber"]
+  date: 2025-11-12  # Mittwoch
+  parents: ["sabine-fischer", "robert-braun", "monika-zimmermann"]
 
 - id: "9"
-  date: 2025-09-01
-  parents: ["thomas-schmidt", "michael-fischer"]
+  date: 2025-11-13  # Donnerstag
+  parents: ["karin-schaefer", "wolfgang-bauer", "birgit-lange"]
 
 - id: "10"
-  date: 2025-09-08
-  parents: ["sarah-hoffmann", "julia-weber"]
+  date: 2025-11-14  # Freitag
+  parents: ["stefanie-lehmann", "matthias-huber", "anja-vogt"]
 
 - id: "11"
-  date: 2025-09-15
-  parents: ["david-klein", "anna-mueller"]
+  date: 2025-11-17  # Montag (Woche 3 - wieder Gruppe 1)
+  parents: ["anna-mueller", "thomas-schmidt", "julia-weber"]
 
 - id: "12"
-  date: 2025-09-22
-  parents: ["michael-fischer", "thomas-schmidt"]
+  date: 2025-11-18  # Dienstag
+  parents: ["lisa-becker", "martin-schulz", "petra-hoffmann"]
 
 - id: "13"
-  date: 2025-09-29
-  parents: ["julia-weber", "sarah-hoffmann"]
+  date: 2025-11-19  # Mittwoch
+  parents: ["stefan-richter", "claudia-koch", "daniel-schneider"]
 
 - id: "14"
-  date: 2025-10-06
-  parents: ["anna-mueller", "david-klein"]
+  date: 2025-11-20  # Donnerstag
+  parents: ["frank-braun", "sabine-krueger", "juergen-hartmann"]
 
-# Upcoming services (November 2025 - June 2026)
 - id: "15"
-  date: 2025-11-03
-  parents: ["thomas-schmidt", "michael-fischer"]
+  date: 2025-11-21  # Freitag
+  parents: ["alexander-wolf", "nina-meyer", "christian-koenig"]
 
 - id: "16"
-  date: 2025-11-05
-  parents: ["lisa-becker", "martin-schulz"]
+  date: 2025-11-24  # Montag
+  parents: ["michael-koch", "sandra-becker", "andreas-wolf"]
 
 - id: "17"
-  date: 2025-11-10
-  parents: ["julia-weber", "sarah-hoffmann"]
+  date: 2025-11-25  # Dienstag
+  parents: ["frank-meyer", "claudia-richter", "markus-klein"]
 
 - id: "18"
-  date: 2025-11-17
-  parents: ["david-klein", "anna-mueller"]
+  date: 2025-11-26  # Mittwoch
+  parents: ["sabine-fischer", "robert-braun", "monika-zimmermann"]
 
 - id: "19"
-  date: 2025-11-19
-  parents: ["petra-wagner", "lisa-becker"]
+  date: 2025-11-27  # Donnerstag
+  parents: ["karin-schaefer", "wolfgang-bauer", "birgit-lange"]
 
 - id: "20"
-  date: 2025-11-24
-  parents: ["michael-fischer", "thomas-schmidt"]
+  date: 2025-11-28  # Freitag
+  parents: ["stefanie-lehmann", "matthias-huber", "anja-vogt"]
 
 - id: "21"
-  date: 2025-12-01
-  parents: ["sarah-hoffmann", "julia-weber"]
+  date: 2025-12-01  # Montag
+  parents: ["anna-mueller", "thomas-schmidt", "julia-weber"]
 
 - id: "22"
-  date: 2025-12-03
-  parents: ["martin-schulz", "petra-wagner"]
+  date: 2025-12-02  # Dienstag
+  parents: ["lisa-becker", "martin-schulz", "petra-hoffmann"]
 
 - id: "23"
-  date: 2025-12-08
-  parents: ["anna-mueller", "david-klein"]
+  date: 2025-12-03  # Mittwoch
+  parents: ["stefan-richter", "claudia-koch", "daniel-schneider"]
 
 - id: "24"
-  date: 2025-12-15
-  parents: ["thomas-schmidt", "michael-fischer"]
+  date: 2025-12-04  # Donnerstag
+  parents: ["frank-braun", "sabine-krueger", "juergen-hartmann"]
 
 - id: "25"
-  date: 2025-12-22
-  parents: ["julia-weber", "sarah-hoffmann"]
+  date: 2025-12-05  # Freitag
+  parents: ["alexander-wolf", "nina-meyer", "christian-koenig"]
 
 - id: "26"
-  date: 2026-01-12
-  parents: ["david-klein", "anna-mueller"]
+  date: 2025-12-08  # Montag
+  parents: ["michael-koch", "sandra-becker", "andreas-wolf"]
 
 - id: "27"
-  date: 2026-01-14
-  parents: ["lisa-becker", "martin-schulz"]
+  date: 2025-12-09  # Dienstag
+  parents: ["frank-meyer", "claudia-richter", "markus-klein"]
 
 - id: "28"
-  date: 2026-01-19
-  parents: ["michael-fischer", "thomas-schmidt"]
+  date: 2025-12-10  # Mittwoch
+  parents: ["sabine-fischer", "robert-braun", "monika-zimmermann"]
 
 - id: "29"
-  date: 2026-01-21
-  parents: ["petra-wagner", "lisa-becker"]
+  date: 2025-12-11  # Donnerstag
+  parents: ["karin-schaefer", "wolfgang-bauer", "birgit-lange"]
 
 - id: "30"
-  date: 2026-01-26
-  parents: ["sarah-hoffmann", "julia-weber"]
+  date: 2025-12-12  # Freitag
+  parents: ["stefanie-lehmann", "matthias-huber", "anja-vogt"]
 
 - id: "31"
-  date: 2026-02-02
-  parents: ["anna-mueller", "david-klein"]
+  date: 2025-12-15  # Montag
+  parents: ["anna-mueller", "thomas-schmidt", "julia-weber"]
 
 - id: "32"
-  date: 2026-02-09
-  parents: ["thomas-schmidt", "michael-fischer"]
+  date: 2025-12-16  # Dienstag
+  parents: ["lisa-becker", "martin-schulz", "petra-hoffmann"]
 
 - id: "33"
-  date: 2026-02-16
-  parents: ["julia-weber", "sarah-hoffmann"]
+  date: 2025-12-17  # Mittwoch
+  parents: ["stefan-richter", "claudia-koch", "daniel-schneider"]
 
 - id: "34"
-  date: 2026-02-23
-  parents: ["david-klein", "anna-mueller"]
+  date: 2025-12-18  # Donnerstag
+  parents: ["frank-braun", "sabine-krueger", "juergen-hartmann"]
+
+# Aktuelle und kommende Services
 
 - id: "35"
-  date: 2026-03-02
-  parents: ["michael-fischer", "thomas-schmidt"]
+  date: 2025-12-19  # Freitag - HEUTE
+  parents: ["alexander-wolf", "nina-meyer", "christian-koenig"]
 
 - id: "36"
-  date: 2026-03-09
-  parents: ["sarah-hoffmann", "julia-weber"]
+  date: 2025-12-22  # Montag
+  parents: ["michael-koch", "sandra-becker", "andreas-wolf"]
+
+# Weihnachtsferien: 23.12. - 03.01. (kein Dienst)
 
 - id: "37"
-  date: 2026-03-16
-  parents: ["anna-mueller", "david-klein"]
+  date: 2026-01-05  # Montag (nach Ferien)
+  parents: ["anna-mueller", "thomas-schmidt", "julia-weber"]
 
 - id: "38"
-  date: 2026-03-23
-  parents: ["thomas-schmidt", "michael-fischer"]
+  date: 2026-01-06  # Dienstag
+  parents: ["frank-meyer", "claudia-richter", "markus-klein"]
 
 - id: "39"
-  date: 2026-04-13
-  parents: ["julia-weber", "sarah-hoffmann"]
+  date: 2026-01-07  # Mittwoch
+  parents: ["sabine-fischer", "robert-braun", "monika-zimmermann"]
 
 - id: "40"
-  date: 2026-04-20
-  parents: ["david-klein", "anna-mueller"]
+  date: 2026-01-08  # Donnerstag
+  parents: ["karin-schaefer", "wolfgang-bauer", "birgit-lange"]
 
 - id: "41"
-  date: 2026-04-27
-  parents: ["michael-fischer", "thomas-schmidt"]
+  date: 2026-01-09  # Freitag
+  parents: ["stefanie-lehmann", "matthias-huber", "anja-vogt"]
 
 - id: "42"
-  date: 2026-05-04
-  parents: ["sarah-hoffmann", "julia-weber"]
+  date: 2026-01-12  # Montag
+  parents: ["michael-koch", "sandra-becker", "andreas-wolf"]
 
 - id: "43"
-  date: 2026-05-11
-  parents: ["anna-mueller", "david-klein"]
+  date: 2026-01-13  # Dienstag
+  parents: ["lisa-becker", "martin-schulz", "petra-hoffmann"]
 
 - id: "44"
-  date: 2026-05-18
-  parents: ["thomas-schmidt", "michael-fischer"]
+  date: 2026-01-14  # Mittwoch
+  parents: ["stefan-richter", "claudia-koch", "daniel-schneider"]
 
 - id: "45"
-  date: 2026-06-01
-  parents: ["julia-weber", "sarah-hoffmann"]
+  date: 2026-01-15  # Donnerstag
+  parents: ["frank-braun", "sabine-krueger", "juergen-hartmann"]
 
 - id: "46"
-  date: 2026-06-08
-  parents: ["david-klein", "anna-mueller"]
+  date: 2026-01-16  # Freitag
+  parents: ["alexander-wolf", "nina-meyer", "christian-koenig"]
 
 - id: "47"
-  date: 2026-06-15
-  parents: ["michael-fischer", "thomas-schmidt"]
+  date: 2026-01-19  # Montag
+  parents: ["anna-mueller", "thomas-schmidt", "julia-weber"]
 
 - id: "48"
-  date: 2026-06-22
-  parents: ["sarah-hoffmann", "julia-weber"]
+  date: 2026-01-20  # Dienstag
+  parents: ["frank-meyer", "claudia-richter", "markus-klein"]
 
 - id: "49"
-  date: 2026-06-29
-  parents: ["anna-mueller", "david-klein"]
+  date: 2026-01-21  # Mittwoch
+  parents: ["sabine-fischer", "robert-braun", "monika-zimmermann"]
+
+- id: "50"
+  date: 2026-01-22  # Donnerstag
+  parents: ["karin-schaefer", "wolfgang-bauer", "birgit-lange"]
+
+- id: "51"
+  date: 2026-01-23  # Freitag
+  parents: ["stefanie-lehmann", "matthias-huber", "anja-vogt"]
+
+- id: "52"
+  date: 2026-01-26  # Montag
+  parents: ["michael-koch", "sandra-becker", "andreas-wolf"]
+
+- id: "53"
+  date: 2026-01-27  # Dienstag
+  parents: ["lisa-becker", "martin-schulz", "petra-hoffmann"]
+
+- id: "54"
+  date: 2026-01-28  # Mittwoch
+  parents: ["stefan-richter", "claudia-koch", "daniel-schneider"]
+
+- id: "55"
+  date: 2026-01-29  # Donnerstag
+  parents: ["frank-braun", "sabine-krueger", "juergen-hartmann"]
+
+- id: "56"
+  date: 2026-01-30  # Freitag
+  parents: ["alexander-wolf", "nina-meyer", "christian-koenig"]

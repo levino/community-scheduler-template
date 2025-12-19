@@ -1,98 +1,217 @@
-# Parents/Guardians - Community Service
-# School Year 2025/26
-# These are example data for demonstration purposes
+# Kindergarten Zipfelmütze - Kochdienst Eltern
+# 30 Eltern (6 pro Wochentag) - jeder ist alle 14 Tage dran
 
-# Monday Group
+# Montagsgruppe (6 Eltern)
 - id: anna-mueller
   firstName: Anna
   lastName: Müller
-  phone: "+491555001001"
+  phone: "+491550001001"
   weekday: monday
+  active: true
 
 - id: thomas-schmidt
   firstName: Thomas
   lastName: Schmidt
-  phone: "+491555001002"
+  phone: "+491550001002"
   weekday: monday
+  active: true
 
 - id: julia-weber
   firstName: Julia
   lastName: Weber
-  phone: "+491555001003"
+  phone: "+491550001003"
   weekday: monday
+  active: true
 
-- id: michael-fischer
+- id: michael-koch
   firstName: Michael
-  lastName: Fischer
-  phone: "+491555001004"
+  lastName: Koch
+  phone: "+491550001004"
   weekday: monday
+  active: true
 
-- id: sarah-hoffmann
-  firstName: Sarah
-  lastName: Hoffmann
-  phone: "+491555001005"
+- id: sandra-becker
+  firstName: Sandra
+  lastName: Becker
+  phone: "+491550001005"
   weekday: monday
+  active: true
 
-- id: david-klein
-  firstName: David
-  lastName: Klein
-  phone: "+491555001006"
+- id: andreas-wolf
+  firstName: Andreas
+  lastName: Wolf
+  phone: "+491550001006"
   weekday: monday
+  active: true
 
-# Tuesday Group
+# Dienstagsgruppe (6 Eltern)
 - id: lisa-becker
   firstName: Lisa
   lastName: Becker
-  phone: "+491555002001"
+  phone: "+491550002001"
   weekday: tuesday
+  active: true
 
 - id: martin-schulz
   firstName: Martin
   lastName: Schulz
-  phone: "+491555002002"
+  phone: "+491550002002"
   weekday: tuesday
+  active: true
 
-- id: petra-wagner
+- id: petra-hoffmann
   firstName: Petra
-  lastName: Wagner
-  phone: "+491555002003"
+  lastName: Hoffmann
+  phone: "+491550002003"
   weekday: tuesday
+  active: true
 
-# Wednesday Group
+- id: frank-meyer
+  firstName: Frank
+  lastName: Meyer
+  phone: "+491550002004"
+  weekday: tuesday
+  active: true
+
+- id: claudia-richter
+  firstName: Claudia
+  lastName: Richter
+  phone: "+491550002005"
+  weekday: tuesday
+  active: true
+
+- id: markus-klein
+  firstName: Markus
+  lastName: Klein
+  phone: "+491550002006"
+  weekday: tuesday
+  active: true
+
+# Mittwochsgruppe (6 Eltern)
 - id: stefan-richter
   firstName: Stefan
   lastName: Richter
-  phone: "+491555003001"
+  phone: "+491550003001"
   weekday: wednesday
+  active: true
 
 - id: claudia-koch
   firstName: Claudia
   lastName: Koch
-  phone: "+491555003002"
+  phone: "+491550003002"
   weekday: wednesday
+  active: true
 
-# Thursday Group
+- id: daniel-schneider
+  firstName: Daniel
+  lastName: Schneider
+  phone: "+491550003003"
+  weekday: wednesday
+  active: true
+
+- id: sabine-fischer
+  firstName: Sabine
+  lastName: Fischer
+  phone: "+491550003004"
+  weekday: wednesday
+  active: true
+
+- id: robert-braun
+  firstName: Robert
+  lastName: Braun
+  phone: "+491550003005"
+  weekday: wednesday
+  active: true
+
+- id: monika-zimmermann
+  firstName: Monika
+  lastName: Zimmermann
+  phone: "+491550003006"
+  weekday: wednesday
+  active: true
+
+# Donnerstagsgruppe (6 Eltern)
 - id: frank-braun
   firstName: Frank
   lastName: Braun
-  phone: "+491555004001"
+  phone: "+491550004001"
   weekday: thursday
+  active: true
 
 - id: sabine-krueger
   firstName: Sabine
   lastName: Krüger
-  phone: "+491555004002"
+  phone: "+491550004002"
   weekday: thursday
+  active: true
 
-# Friday Group
+- id: juergen-hartmann
+  firstName: Jürgen
+  lastName: Hartmann
+  phone: "+491550004003"
+  weekday: thursday
+  active: true
+
+- id: karin-schaefer
+  firstName: Karin
+  lastName: Schäfer
+  phone: "+491550004004"
+  weekday: thursday
+  active: true
+
+- id: wolfgang-bauer
+  firstName: Wolfgang
+  lastName: Bauer
+  phone: "+491550004005"
+  weekday: thursday
+  active: true
+
+- id: birgit-lange
+  firstName: Birgit
+  lastName: Lange
+  phone: "+491550004006"
+  weekday: thursday
+  active: true
+
+# Freitagsgruppe (6 Eltern)
 - id: alexander-wolf
   firstName: Alexander
   lastName: Wolf
-  phone: "+491555005001"
+  phone: "+491550005001"
   weekday: friday
+  active: true
 
 - id: nina-meyer
   firstName: Nina
   lastName: Meyer
-  phone: "+491555005002"
+  phone: "+491550005002"
   weekday: friday
+  active: true
+
+- id: christian-koenig
+  firstName: Christian
+  lastName: König
+  phone: "+491550005003"
+  weekday: friday
+  active: true
+
+- id: stefanie-lehmann
+  firstName: Stefanie
+  lastName: Lehmann
+  phone: "+491550005004"
+  weekday: friday
+  active: true
+
+- id: matthias-huber
+  firstName: Matthias
+  lastName: Huber
+  phone: "+491550005005"
+  weekday: friday
+  active: true
+
+- id: anja-vogt
+  firstName: Anja
+  lastName: Vogt
+  phone: "+491550005006"
+  weekday: friday
+  active: true
