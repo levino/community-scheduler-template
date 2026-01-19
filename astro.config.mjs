@@ -15,7 +15,8 @@ export default defineConfig({
 			tagline: 'Kochdienst-Planung',
 			brand: 'KiGa Zipfelmütze',
 			navigation: {
-				docs: { label: 'Info', href: '/docs/intro' },
+				software: { label: 'Nutzung der Software', href: '/software/intro' },
+				docs: { label: 'Mittagessen-Dienst', href: '/docs/intro' },
 				dienstplan: {
 					label: 'Dienstplan',
 					subEntry: {
@@ -32,8 +33,18 @@ export default defineConfig({
 			github: 'https://github.com/levino/community-scheduler-template',
 		}),
 		shipyardDocs({
+			routeBasePath: 'docs',
+			collectionName: 'docs',
 			editUrl:
 				'https://github.com/levino/community-scheduler-template/edit/main/src/content/docs',
+			showLastUpdateTime: true,
+			showLastUpdateAuthor: true,
+		}),
+		shipyardDocs({
+			routeBasePath: 'software',
+			collectionName: 'software',
+			editUrl:
+				'https://github.com/levino/community-scheduler-template/edit/main/src/content/software',
 			showLastUpdateTime: true,
 			showLastUpdateAuthor: true,
 		}),
