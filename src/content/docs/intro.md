@@ -3,13 +3,13 @@ title: Kindergarten Zipfelmütze - Mittagessen-Dienst
 description: Informationen zum Eltern-Kochdienst im Kindergarten Zipfelmütze
 ---
 
-# 🍳 Willkommen beim Mittagessen-Dienst
+# Willkommen beim Mittagessen-Dienst
 
 Dies ist die Planungsseite für den **Eltern-Kochdienst** im Kindergarten Zipfelmütze.
 
 ---
 
-> **📌 Hinweis:** Dies ist eine **Demo-Installation** des [Community Scheduler Templates](https://github.com/levino/community-scheduler-template).
+> **Hinweis:** Dies ist eine **Demo-Installation** des [Community Scheduler Templates](https://github.com/levino/community-scheduler-template).
 >
 > Die hier gezeigten Daten (Namen, Telefonnummern, Termine) sind **Beispieldaten** zu Demonstrationszwecken.
 >
@@ -17,7 +17,7 @@ Dies ist die Planungsseite für den **Eltern-Kochdienst** im Kindergarten Zipfel
 
 ---
 
-## 🥘 Über den Kochdienst
+## Über den Kochdienst
 
 Jeden Tag von **Montag bis Freitag** übernehmen Eltern die Zubereitung des Mittagessens für die Kinder.
 
@@ -36,7 +36,7 @@ Jeden Tag von **Montag bis Freitag** übernehmen Eltern die Zubereitung des Mitt
 
 Dank unserer großen Elterngemeinschaft ist **jede Familie nur alle 14 Tage** an der Reihe.
 
-## 📋 Wochentagsgruppen
+## Wochentagsgruppen
 
 Die Dienstpläne sind nach Wochentagen organisiert. **Jede Wochentagsgruppe verwaltet sich selbstständig!**
 
@@ -46,11 +46,11 @@ Die Dienstpläne sind nach Wochentagen organisiert. **Jede Wochentagsgruppe verw
 - [Donnerstag](/dienstplan/thursday)
 - [Freitag](/dienstplan/friday)
 
-## 👥 Ansprechpartner
+## Ansprechpartner
 
 Die [Ansprechpartner-Liste](/docs/ansprechpartnerinnen) enthält Kontaktinformationen für alle Koordinatoren und Kochteams.
 
-## 🤝 Dienste tauschen
+## Dienste tauschen
 
 Du kannst nicht an deinem Termin? Kein Problem!
 
@@ -61,7 +61,7 @@ Du kannst nicht an deinem Termin? Kein Problem!
 
 ---
 
-## 🔒 Zugriffsschutz
+## Zugriffsschutz
 
 > **Diese Demo ist öffentlich** - nur zu Demonstrationszwecken!
 >
@@ -72,4 +72,4 @@ Du kannst nicht an deinem Termin? Kein Problem!
 
 ---
 
-**Bei Fragen zur Demo oder zum Template:** Siehe [GitHub Repository](https://github.com/levino/community-scheduler-template)
+**Bei Fragen zur Demo oder zum Template:** Siehe [GitHub Repository](https://github.com/levino/community-scheduler-template) oder die [Software-Dokumentation](/software/intro).

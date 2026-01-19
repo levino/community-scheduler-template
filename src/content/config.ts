@@ -35,4 +35,8 @@ export const collections = {
 		schema: docsSchema,
 		loader: glob({ pattern: '**/*.md', base: './src/content/docs' }),
 	}),
+	software: defineCollection({
+		schema: docsSchema,
+		loader: glob({ pattern: '**/*.md', base: './src/content/software' }),
+	}),
 }
