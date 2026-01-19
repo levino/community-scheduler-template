@@ -90,6 +90,17 @@ Eine berechtigte Frage! Für einfache, persönliche Terminplanung sind Excel, Go
 
 **Kurz gesagt:** Für eine einzelne Geburtstagsfeier reicht ein geteilter Kalender. Für regelmäßige Gemeinschaftsdienste mit Tauschbedarf, Erinnerungen und fairer Rotation bietet dieses System deutliche Vorteile – und spart langfristig Zeit für alle Beteiligten.
 
+### Kann ich Dienstpläne mit KI optimieren lassen?
+
+Ja! Ein großer Vorteil dieses Systems ist die Möglichkeit, Dienstpläne mit KI-Unterstützung zu optimieren. Anstatt manuell Excel-Zellen zu verschieben oder alle Beteiligten zu befragen, kannst du einfach Anforderungen in natürlicher Sprache formulieren:
+
+- *"Hans kann dienstags nie"*
+- *"Anna und Thomas möchten immer zusammen Dienst haben"*
+- *"Stelle sicher, dass niemand zwei Wochen hintereinander dran ist"*
+- *"Familie Müller kann im August nicht, weil sie im Urlaub sind"*
+
+Die KI (z.B. Claude) analysiert den bestehenden Dienstplan, berücksichtigt alle Einschränkungen und schlägt automatisch eine optimierte Lösung vor – fair, effizient und ohne stundenlange Koordination per WhatsApp oder E-Mail.
+
 ---
 
 **Bei Fragen zur Demo oder zum Template:** Siehe [GitHub Repository](https://github.com/levino/community-scheduler-template)
