@@ -72,4 +72,24 @@ Du kannst nicht an deinem Termin? Kein Problem!
 
 ---
 
+## ❓ Häufig gestellte Fragen
+
+### Warum nicht einfach eine Excel-Tabelle, Google Sheets oder einen geteilten Google Kalender nutzen?
+
+Eine berechtigte Frage! Für einfache, persönliche Terminplanung sind Excel, Google Sheets oder Google Kalender durchaus geeignet. Doch bei **wiederkehrenden Gemeinschaftsaufgaben** mit mehreren Beteiligten stößt man schnell an Grenzen:
+
+| Aspekt | Excel / Google Sheets / Kalender | Dieses System |
+|--------|----------------------------------|---------------|
+| **Änderungen** | Eine Person verwaltet die Datei, alle anderen schreiben Mails/WhatsApp → Flaschenhals | Selbstständig Tausch-Anfragen stellen, KI erstellt Änderung, Admin bestätigt nur noch |
+| **Fehlerquellen** | Tippfehler, falsches Datum, ungültige Einträge möglich | Automatische Validierung – fehlerhafte Daten werden vor Veröffentlichung abgelehnt |
+| **Mobilfreundlichkeit** | Tabellen und Kalender sind auf dem Handy umständlich | Responsive Design, Telefonnummern direkt anrufbar |
+| **Erinnerungen** | Manuell verschicken oder vergessen | Automatische SMS-Erinnerungen vor jedem Dienst |
+| **Statistiken** | Manuelles Zählen und Sortieren | Übersichtliche Statistik: Wer hat wie oft Dienst gemacht? |
+| **Nachvollziehbarkeit** | Änderungen überschreiben Originaldaten | Vollständige Historie aller Änderungen mit Begründung |
+| **Kosten** | Kostenlos, aber eingeschränkte Zusammenarbeit | 0-5€/Monat für professionelle Features |
+
+**Kurz gesagt:** Für eine einzelne Geburtstagsfeier reicht ein geteilter Kalender. Für regelmäßige Gemeinschaftsdienste mit Tauschbedarf, Erinnerungen und fairer Rotation bietet dieses System deutliche Vorteile – und spart langfristig Zeit für alle Beteiligten.
+
+---
+
 **Bei Fragen zur Demo oder zum Template:** Siehe [GitHub Repository](https://github.com/levino/community-scheduler-template)
