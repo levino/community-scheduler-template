@@ -1,0 +1,48 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"description": "Renovate (Mend-App) hält npm, Docker-Basis-Images, Devcontainer und GitHub Actions aktuell. Routine-Updates gebündelt montags und donnerstags, Sicherheitsfixes sofort, keine Majors.",
+	"extends": ["config:recommended", ":disableDependencyDashboard"],
+	"timezone": "Europe/Berlin",
+	"labels": ["dependencies"],
+	"osvVulnerabilityAlerts": true,
+	"vulnerabilityAlerts": { "minimumReleaseAge": null },
+	"rebaseWhen": "conflicted",
+	"prHourlyLimit": 0,
+	"prConcurrentLimit": 20,
+	"automerge": true,
+	"platformAutomerge": false,
+	"packageRules": [
+		{
+			"description": "Basis-Images und Actions per Digest pinnen, damit Rebuilds (z. B. Node-Sicherheitsfixes) als Update ankommen.",
+			"matchManagers": [
+				"dockerfile",
+				"devcontainer",
+				"github-actions",
+				"docker-compose"
+			],
+			"pinDigests": true
+		},
+		{
+			"description": "Routine-Updates gebündelt in einem PR, montags und donnerstags (spart CI-Läufe). Sicherheitsfixes kommen weiter sofort.",
+			"matchUpdateTypes": ["digest", "pin", "pinDigest", "patch", "minor"],
+			"groupName": "Routine-Updates",
+			"schedule": ["before 6am on monday", "before 6am on thursday"]
+		},
+		{
+			"description": "Biome-Updates einzeln, damit neue Regeln nicht alle anderen Updates blockieren.",
+			"matchPackageNames": ["@biomejs/biome"],
+			"groupName": "biome",
+			"schedule": ["before 6am on monday", "before 6am on thursday"]
+		},
+		{
+			"description": "Keine Major-PRs. Majors erst, wenn der Support der genutzten Version endet.",
+			"matchUpdateTypes": ["major"],
+			"enabled": false
+		},
+		{
+			"description": "Lieferketten-Schutz: Actions- und npm-Releases erst nach 3 Tagen übernehmen. Basis-Image-Digests und Sicherheitsfixes kommen sofort.",
+			"matchManagers": ["github-actions", "npm"],
+			"minimumReleaseAge": "3 days"
+		}
+	]
+}
