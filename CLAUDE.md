@@ -6,12 +6,12 @@ This is an **Astro-based template** for managing community service schedules. It
 
 ## Technology Stack
 
-- **Astro 5.16+** - Static site generator
+- **Astro 7** - Static site generator
 - **TypeScript 5.6** - Programming language
 - **React 19** - UI framework (for interactive components)
 - **Tailwind CSS + DaisyUI** - Styling
 - **Shipyard Framework** - Documentation components
-- **Node.js 22+** - Runtime environment
+- **Node.js 22.23.4+** - Runtime environment
 - **Biome** - Code formatter and linter
 - **Lefthook** - Git hooks management
 - **Ramda + date-fns** - Functional utilities

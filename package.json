@@ -13,32 +13,33 @@
 		"prepare": "lefthook install"
 	},
 	"dependencies": {
-		"@astrojs/mdx": "^4.0.0",
-		"@astrojs/node": "^9.5.1",
-		"@astrojs/react": "^4.0.0",
-		"@astrojs/tailwind": "^6.0.2",
-		"@levino/shipyard-base": "^0.5.9",
-		"@levino/shipyard-blog": "^0.5.1",
-		"@levino/shipyard-docs": "^0.5.1",
+		"@astrojs/mdx": "^8.1.1",
+		"@astrojs/node": "^11.1.9",
+		"@astrojs/react": "^7.1.1",
+		"@levino/shipyard-base": "^0.9.4",
+		"@levino/shipyard-blog": "^0.9.4",
+		"@levino/shipyard-docs": "^0.9.4",
 		"@mdx-js/react": "^3.0.0",
-		"@tailwindcss/typography": "^0.5.19",
+		"@tailwindcss/typography": "^0.5.20",
+		"@tailwindcss/vite": "^4.2.2",
 		"@types/ramda": "^0.31.1",
-		"astro": "^5.16.6",
+		"astro": "^7.4.2",
 		"clsx": "^2.0.0",
-		"daisyui": "^4.12.0",
+		"daisyui": "^5.5.19",
 		"date-fns": "^4.1.0",
 		"prism-react-renderer": "^2.3.0",
 		"ramda": "^0.32.0",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
-		"tailwindcss": "^3.4.0",
+		"tailwindcss": "^4.2.2",
 		"twilio": "^5.11.1",
 		"yaml": "^2.8.2"
 	},
 	"devDependencies": {
 		"@anthropic-ai/claude-code": "^2.0.26",
-		"@astrojs/check": "^0.9.6",
+		"@astrojs/check": "^0.9.12",
 		"@biomejs/biome": "2.5.15",
+		"@types/node": "^22.20.5",
 		"lefthook": "^2.0.12",
 		"typescript": "~5.6.2"
 	},
@@ -55,6 +56,6 @@
 		]
 	},
 	"engines": {
-		"node": ">=22.0"
+		"node": ">=22.23.4"
 	}
 }

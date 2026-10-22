@@ -1,3 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@import "@levino/shipyard-base";
+@import "@levino/shipyard-docs";
+
+@plugin "daisyui";
+@plugin "@tailwindcss/typography";

@@ -165,7 +165,7 @@ Das Template unterstützt nicht nur Anzeige, sondern auch **aktive Aktionen**:
 - [**README (Deutsch)**](https://github.com/levino/community-scheduler-template/blob/main/README_DE.md) - Umfassende Anleitung
 
 ### Technische Details
-- Gebaut mit [Astro 5.16+](https://astro.build)
+- Gebaut mit [Astro 7](https://astro.build)
 - Gestylt mit [Tailwind CSS](https://tailwindcss.com) + [DaisyUI](https://daisyui.com)
 - Nutzt [Content Collections](https://docs.astro.build/en/guides/content-collections/) für typsichere Daten
 - Auto-formatiert mit [Biome](https://biomejs.dev)

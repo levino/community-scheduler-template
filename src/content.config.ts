@@ -1,6 +1,7 @@
-import { defineCollection, reference, z } from 'astro:content'
+import { defineCollection, reference } from 'astro:content'
 import { docsSchema } from '@levino/shipyard-docs'
 import { file, glob } from 'astro/loaders'
+import { z } from 'astro/zod'
 
 // Schema für Dienstplan-Einträge
 const dienstplanSchema = z.object({
