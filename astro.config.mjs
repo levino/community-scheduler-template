@@ -1,16 +1,22 @@
-import tailwind from '@astrojs/tailwind'
 import shipyard from '@levino/shipyard-base'
 import shipyardDocs from '@levino/shipyard-docs'
+import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'astro/config'
+
+import globalsCss from './src/styles/globals.css?url'
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://community-scheduler-template.example.com',
+	// Astro 7 entfernt standardmäßig Leerraum zwischen Inline-Elementen nach JSX-Regeln
+	// (compressHTML: 'jsx'). Wir behalten das bisherige Verhalten, damit keine Leerzeichen verloren gehen.
+	compressHTML: true,
+	vite: {
+		plugins: [tailwindcss()],
+	},
 	integrations: [
-		tailwind({
-			applyBaseStyles: false,
-		}),
 		shipyard({
+			css: globalsCss,
 			title: 'Kindergarten Zipfelmütze',
 			tagline: 'Kochdienst-Planung',
 			brand: 'KiGa Zipfelmütze',

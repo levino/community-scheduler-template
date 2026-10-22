@@ -21,6 +21,10 @@
 	"platformAutomerge": false,
 	"packageRules": [
 		{
+			"matchPackageNames": ["astro", "@astrojs/**"],
+			"groupName": "astro"
+		},
+		{
 			"description": "Das Preset security:only-security-updates schaltet alle Abhängigkeiten schon vor dem Nachschlagen ab. Docker-Images hier wieder einschalten, sonst findet Renovate keine neuen Digests; welche Updates davon kommen, regeln die beiden folgenden Regeln.",
 			"matchManagers": ["dockerfile", "docker-compose", "kubernetes"],
 			"enabled": true
